@@ -449,6 +449,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8250516912492865050, guid: 915067917a7b1ef4cb9c267c14dba27f, type: 3}
     - target: {fileID: -1545728587338771840, guid: 7591538d2a306d74282039d1aa827f4e, type: 3}
+      propertyPath: bulletLifeTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1545728587338771840, guid: 7591538d2a306d74282039d1aa827f4e, type: 3}
       propertyPath: proyectileSpeed
       value: 10
       objectReference: {fileID: 0}

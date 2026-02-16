@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3715861019634015798}
   - component: {fileID: 8461026101433000445}
   - component: {fileID: -87653273846611898}
-  - component: {fileID: 4788243234502348224}
+  - component: {fileID: 4197443660434127393}
   m_Layer: 0
   m_Name: Proyectile
   m_TagString: Untagged
@@ -151,7 +151,7 @@ MonoBehaviour:
   speed: 0
   damage: 0
   collision: 0
---- !u!50 &4788243234502348224
+--- !u!50 &4197443660434127393
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0

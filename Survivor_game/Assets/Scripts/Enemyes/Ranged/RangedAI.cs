@@ -5,6 +5,7 @@ public class RangedAI : AI
 {
     [SerializeField] public float proyectileSpeed;
     [SerializeField] GameObject proyectile;
+    [SerializeField] public float bulletLifeTime;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

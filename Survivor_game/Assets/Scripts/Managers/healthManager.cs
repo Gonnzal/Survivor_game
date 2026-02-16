@@ -19,6 +19,7 @@ public class healthManager : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health -= damage;
+        Debug.Log("1");
         if(health <= 0)
         {
             Die();
