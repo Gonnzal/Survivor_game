@@ -1,25 +1,28 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class AI : MonoBehaviour
 {
-    [SerializeField] float range;
+    [SerializeField] public float range;
     [SerializeField] float speed;
-    [SerializeField] float damage;
-    [SerializeField] float cooldown;
+    [SerializeField] public float damage;
+    [SerializeField] public float cooldown;
     [SerializeField] Transform player;
-    bool canAttack = true;
+    public bool canAttack = true;
     float distanceX;
     float distanceY;
-    float distance;
+    public float distance;
+    public healthManager playerHealth;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        playerHealth = player.GetComponent<healthManager>();
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         distanceX = player.transform.position.x - transform.position.x;
         distanceY = player.transform.position.y - transform.position.y;
@@ -29,28 +32,42 @@ public class AI : MonoBehaviour
         {
             GetCloser();
         }
-        else if (distance <= range && canAttack)
-        {
-            //Attack();
-        }
     }
 
     void GetCloser()
     {
-        if(distanceX > 0)
+        float angle = Mathf.Atan2(distanceY, distanceX) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        if(distanceX == 0)
+        {
+            transform.position = new Vector2(transform.position.x, transform.position.y);
+        }
+        else if(distanceX > -0.3f && distanceX < 0.3f)
+        {
+            transform.position = new Vector2(player.transform.position.x, transform.position.y);
+        }
+        else if(distanceX > 0.3f)
         {
             transform.position = new Vector2(transform.position.x + speed * Time.deltaTime, transform.position.y);
         }
-        else if (distanceX < 0)
+        else if (distanceX < -0.3f)
         {
             transform.position = new Vector2(transform.position.x - speed * Time.deltaTime, transform.position.y);
         }
 
-        if (distanceY > 0)
+        if(distanceY == 0)
+        {
+            transform.position = new Vector2(transform.position.x, transform.position.y);
+        }
+        else if(distanceY > -0.3f && distanceY < 0.3f)
+        {
+            transform.position = new Vector2(transform.position.x, player.transform.position.y);
+        }
+        else if (distanceY > 0.3f)
         {
             transform.position = new Vector2(transform.position.x, transform.position.y + speed * Time.deltaTime);
         }
-        else if (distanceY < 0)
+        else if (distanceY < -0.3f)
         {
             transform.position = new Vector2(transform.position.x, transform.position.y - speed * Time.deltaTime);
         }
