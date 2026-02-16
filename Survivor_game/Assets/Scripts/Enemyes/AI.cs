@@ -10,8 +10,8 @@ public class AI : MonoBehaviour
     [SerializeField] public float cooldown;
     [SerializeField] Transform player;
     public bool canAttack = true;
-    float distanceX;
-    float distanceY;
+    public float distanceX;
+    public float distanceY;
     public float distance;
     public healthManager playerHealth;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
