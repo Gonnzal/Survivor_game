@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -1545728587338771840}
   m_Layer: 0
   m_Name: Enemy(Ranged)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,7 +106,10 @@ MonoBehaviour:
   cooldown: 0
   player: {fileID: 0}
   canAttack: 1
+  distanceX: 0
+  distanceY: 0
   distance: 0
   playerHealth: {fileID: 0}
   proyectileSpeed: 0
   proyectile: {fileID: 8250516912492865050, guid: 915067917a7b1ef4cb9c267c14dba27f, type: 3}
+  bulletLifeTime: 0

@@ -17,7 +17,7 @@ public class RangedAI : AI
     {
         base.Update();
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, Mathf.Atan2(distanceY, distanceX) * Mathf.Rad2Deg));
-        if(distance <= range*2 /3 && canAttack)
+        if(distance <= range && canAttack)
         {
             Attack();
         }
