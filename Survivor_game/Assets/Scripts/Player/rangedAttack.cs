@@ -38,6 +38,7 @@ public class rangedAttack : MonoBehaviour
     {
         if(canShoot)
         {
+            /*
             foreach (GameObject obj in )
             {
                 MeasureDistance(obj);
@@ -46,6 +47,7 @@ public class rangedAttack : MonoBehaviour
                     SelectTarget(obj);
                 }
             }
+            */
 
             for (int i = 0; i<poolIndex.Length; i++)
             {
@@ -70,9 +72,10 @@ public class rangedAttack : MonoBehaviour
     {
         target = obj.transform.position;
     }
-
+/*
     IEnumerator Cooldown()
     {
         yield return new WaitForSeconds(coolDown);
     }
+    */
 }
