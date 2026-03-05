@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7173967844049170740}
   - component: {fileID: 2532059893763148924}
   - component: {fileID: 8609670358363533815}
+  - component: {fileID: -2077330158361421849}
   m_Layer: 0
   m_Name: Enemy(mele)
   m_TagString: Enemy
@@ -102,3 +103,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 0
+--- !u!114 &-2077330158361421849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2586717016176244384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6949c6b077a7441a8ea9d5074b1608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 0
+  speed: 3
+  damage: 0
+  cooldown: 0
+  player: {fileID: 0}
+  canAttack: 1
+  distanceX: 0
+  distanceY: 0
+  distance: 0
+  playerHealth: {fileID: 0}
