@@ -127,6 +127,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1193787913521213246, guid: 0b5e1c01ebe397643a12757a451ae477, type: 3}
+      propertyPath: coolDown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1193787913521213246, guid: 0b5e1c01ebe397643a12757a451ae477, type: 3}
+      propertyPath: proyectileSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -1193787913521213246, guid: 0b5e1c01ebe397643a12757a451ae477, type: 3}
+      propertyPath: enemys.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1193787913521213246, guid: 0b5e1c01ebe397643a12757a451ae477, type: 3}
+      propertyPath: proyectileLifeTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1193787913521213246, guid: 0b5e1c01ebe397643a12757a451ae477, type: 3}
+      propertyPath: 'enemys.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1904803396}
     - target: {fileID: -1148343745227579901, guid: 0b5e1c01ebe397643a12757a451ae477, type: 3}
       propertyPath: m_BodyType
       value: 0
@@ -335,6 +355,10 @@ PrefabInstance:
     - target: {fileID: -2077330158361421849, guid: 79ba9209c8845984882375cc10c3a84d, type: 3}
       propertyPath: range
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2077330158361421849, guid: 79ba9209c8845984882375cc10c3a84d, type: 3}
+      propertyPath: speed
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2077330158361421849, guid: 79ba9209c8845984882375cc10c3a84d, type: 3}
       propertyPath: player
