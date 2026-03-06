@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using System.Collections;
 
 public class rangedAttack : MonoBehaviour
 {
@@ -9,14 +10,16 @@ public class rangedAttack : MonoBehaviour
     [SerializeField] float proyectileSpeed;
     [SerializeField] GameObject proyectile;
     [SerializeField] float damage;
-    float distanceToTarget;
-    float tempDistance;
+    [SerializeField] List<GameObject> enemys;
+    [SerializeField] float proyectileLifeTime;
+    [SerializeField] float distanceToTarget;
+    [SerializeField] float tempDistance;
     bool canShoot = true;
     Vector3 target;
     GameObject[] proyectiles = new GameObject[] {};
-    int[] poolIndex = new int[] {};
+    bool[] poolIndex = new bool[] {};
     [SerializeField] int proyectileCount;
-    [SerializeField] 
+    bool shot;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,32 +32,40 @@ public class rangedAttack : MonoBehaviour
             proyectiles[proyectiles.Length - 1] = temp;
             temp.SetActive(false);
             System.Array.Resize(ref poolIndex, poolIndex.Length +1);
-            poolIndex[poolIndex.Length-1] = 0;
+            poolIndex[poolIndex.Length-1] = false;
         }
+        tempDistance = 0;
+        distanceToTarget = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+        shot = false;
         if(canShoot)
         {
-            /*
-            foreach (GameObject obj in )
+            
+            foreach (GameObject obj in enemys)
             {
                 MeasureDistance(obj);
-                if(tempDistance < distanceToTarget)
+                if(tempDistance < distanceToTarget || distanceToTarget == 0)
                 {
                     SelectTarget(obj);
                 }
             }
-            */
+            
 
             for (int i = 0; i<poolIndex.Length; i++)
             {
-                if(poolIndex[i] == 0)
+                if(poolIndex[i] == false && !shot)
                 {
                     proyectiles[i].SetActive(true);
                     proyectiles[i].GetComponent<PlayerProyectile>().target = target;
+                    poolIndex[i] = true;
+                    canShoot = false;
+                    StartCoroutine(Cooldown());
+                    StartCoroutine(bulletDeactivation(i));
+                    shot = true;
                 }
             }
         }
@@ -72,10 +83,18 @@ public class rangedAttack : MonoBehaviour
     {
         target = obj.transform.position;
     }
-/*
+
     IEnumerator Cooldown()
     {
         yield return new WaitForSeconds(coolDown);
+        canShoot = true;
     }
-    */
+
+    IEnumerator bulletDeactivation(int i)
+    {
+        yield return new WaitForSeconds(proyectileLifeTime);
+        proyectiles[i].transform.position = this.transform.position;
+        proyectiles[i].SetActive(false);
+        poolIndex[i] = false;
+    }  
 }
