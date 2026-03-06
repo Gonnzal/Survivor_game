@@ -3,35 +3,34 @@ using UnityEngine;
 
 public class RangedAI : AI
 {
-    [SerializeField] public float proyectileSpeed;
-    [SerializeField] GameObject proyectile;
-    [SerializeField] public float bulletLifeTime;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        base.Start();
-    }
+    public float projectileSpeed = 8f;
+    public float bulletLifeTime = 3f;
+    [SerializeField] GameObject projectilePrefab;
 
-    // Update is called once per frame
-    void Update()
+    new void Start() { base.Start(); }
+
+    new void Update()
     {
         base.Update();
-        transform.rotation = Quaternion.Euler(new Vector3(0, 0, Mathf.Atan2(distanceY, distanceX) * Mathf.Rad2Deg));
-        if(distance <= range && canAttack)
-        {
+        if (distance <= range && canAttack)
             Attack();
-        }
     }
 
     void Attack()
     {
-        Instantiate(proyectile, transform.position, transform.rotation);
+        GameObject bullet = Instantiate(projectilePrefab, transform.position, transform.rotation);
+
+        // Pasar los datos directamente al proyectil
+        Proyectile p = bullet.GetComponent<Proyectile>();
+        p.damage = damage;
+        p.speed = projectileSpeed;
+        p.lifeTime = bulletLifeTime;
+
         canAttack = false;
-        StartCoroutine(AttackCoodown());
+        StartCoroutine(Cooldown());
     }
 
-
-    IEnumerator AttackCoodown()
+    IEnumerator Cooldown()
     {
         yield return new WaitForSeconds(cooldown);
         canAttack = true;

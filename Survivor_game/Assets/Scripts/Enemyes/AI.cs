@@ -1,37 +1,64 @@
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class AI : MonoBehaviour
 {
-    [SerializeField] public float range;
-    [SerializeField] float speed;
-    [SerializeField] public float damage;
-    [SerializeField] public float cooldown;
-    [SerializeField] Transform player;
-    [SerializeField] float distanceDifference;
+    [Header("Stats")]
+    public float maxHealth = 100f;
+    public float speed = 3f;
+    public float damage = 10f;
+    public float range = 2f;
+    public float cooldown = 1f;
+
+    [Header("Estado")]
+    public float health;
     public bool canAttack = true;
+
+    protected Transform player;
+    public healthManager playerHealth;
+
     public float distanceX;
     public float distanceY;
     public float distance;
-    public healthManager playerHealth;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    private PooledEnemy pooledEnemy;
+
     public void Start()
     {
+        health = maxHealth;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         playerHealth = player.GetComponent<healthManager>();
+        pooledEnemy = GetComponent<PooledEnemy>();
     }
 
-    // Update is called once per frame
     public void Update()
     {
-        distanceX = player.transform.position.x - transform.position.x;
-        distanceY = player.transform.position.y - transform.position.y;
-        distance = Mathf.Sqrt((distanceX * distanceX) + (distanceY * distanceY));
+        distanceX = player.position.x - transform.position.x;
+        distanceY = player.position.y - transform.position.y;
+        distance = Vector2.Distance(transform.position, player.position);
 
-        if(distance > range)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
-        }
+        if (distance > range)
+            MoveTowardsPlayer();
+    }
+
+    void MoveTowardsPlayer()
+    {
+        Vector2 direction = new Vector2(distanceX, distanceY).normalized;
+        transform.position += (Vector3)(direction * speed * Time.deltaTime);
+        float angle = Mathf.Atan2(distanceY, distanceX) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0, 0, angle);
+    }
+
+    public void TakeDamage(float dmg)
+    {
+        health -= dmg;
+        if (health <= 0)
+            Die();
+    }
+
+    void Die()
+    {
+        health = maxHealth; // reset para cuando vuelva del pool
+        canAttack = true;
+        pooledEnemy.ReturnToPool();
     }
 }

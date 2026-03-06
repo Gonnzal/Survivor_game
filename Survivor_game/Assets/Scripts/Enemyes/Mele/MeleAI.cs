@@ -1,36 +1,25 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class MeleAI : AI
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        base.Start();
-    }
+    new void Start() { base.Start(); }
 
-    // Update is called once per frame
-    void Update()
+    new void Update()
     {
         base.Update();
         if (distance <= range && canAttack)
-        {
             Attack();
-        }
     }
 
-    public void Attack()
+    void Attack()
     {
-        if(canAttack)
-        {
-            playerHealth.TakeDamage(damage);
-        }
+        playerHealth.TakeDamage(damage);
         canAttack = false;
-        StartCoroutine(AttackCooldown());
+        StartCoroutine(Cooldown());
     }
 
-    IEnumerator AttackCooldown()
+    IEnumerator Cooldown()
     {
         yield return new WaitForSeconds(cooldown);
         canAttack = true;
