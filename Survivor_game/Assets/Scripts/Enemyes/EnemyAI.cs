@@ -56,6 +56,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (vida <= 0)
         {
+            danio = 0;
             velocidad = 0;
             animator.SetTrigger("Dead");
         }
