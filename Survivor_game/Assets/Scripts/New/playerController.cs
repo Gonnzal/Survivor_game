@@ -9,6 +9,8 @@ public class playerController : MonoBehaviour
     [SerializeField] float maxDashTime;
     [SerializeField] float defaultSpeed;
     [SerializeField] float dashSpeed;
+    [SerializeField] float maxHealth;
+    float health;
     float coolDown1;
     float coolDown2;
     float coolDown3;
@@ -26,6 +28,7 @@ public class playerController : MonoBehaviour
         dashing = false;
         dashTime = 0;
         speed = defaultSpeed;
+        health = maxHealth;
     }
 
     // Update is called once per frame
@@ -124,5 +127,15 @@ public class playerController : MonoBehaviour
                 dashTime = 0;
             }
         }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+    }
+
+    public void Heal(int heal)
+    {
+        health+= heal;
     }
 }
