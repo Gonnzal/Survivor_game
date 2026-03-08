@@ -93,7 +93,7 @@ public class playerController : MonoBehaviour
 
     void FindEnemy()
     {
-        // Solo busca dentro del radio, usando el motor de física
+        // Solo busca dentro del radio, usando el motor de fisica
         Collider2D[] enemies = Physics2D.OverlapCircleAll(
             this.transform.position,
             detectionRadius,
