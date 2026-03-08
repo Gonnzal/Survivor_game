@@ -3,8 +3,9 @@ using System.Collections.Generic;
 
 public class DistanceAI : EnemyAI
 {
-    public List<BalaEnemy> poolBalas = new List<BalaEnemy>();
-    public BalaEnemy balaPrefab;
+    public List<GameObject> poolBalas = new List<GameObject>();
+    private int balasSize = 2;
+    public GameObject balaPrefab;
     private float shootCooldown = 3f;
     private float shootTimer = 0f;
 
@@ -16,46 +17,52 @@ public class DistanceAI : EnemyAI
         distanciaJugador = 5f;
         base.Start();
         rb2D.mass = 1f;
-
-        // Instanciar el pool
-        for (int i = 0; i < 5; i++)
-        {
-            BalaEnemy instancia = Instantiate(balaPrefab);
-            instancia.gameObject.SetActive(false);
-            poolBalas.Add(instancia);
-        }
+        AddBalaToPool(balasSize);
     }
 
     protected override void Update()
     {
         base.Update();
-        Shoot();
+        EnemigoDisapara();
     }
 
-    void Shoot()
+    void EnemigoDisapara()
     {
         shootTimer -= Time.deltaTime;
 
         Vector2 diferencia = (Vector2)objetivoReal.position - rb2D.position;
-        float distancia = diferencia.magnitude;
-
-        if (distancia <= distanciaJugador && shootTimer <= 0f)
+        if (shootTimer <= 0f && diferencia.magnitude <= distanciaJugador)
         {
-            Ataque();
+            GameObject dispBala = ActivarBala();
+            BalaEnemy balaScript = dispBala.GetComponent<BalaEnemy>();
+            balaScript.Disparar(this.transform.position, objetivoReal.position);
             shootTimer = shootCooldown;
         }
     }
 
-    void Ataque()
+    void AddBalaToPool(int amount)
     {
-        BalaEnemy balaDisponible = poolBalas.Find(b => !b.gameObject.activeSelf);
-
-        if (balaDisponible != null)
+        for (int i = 0; i < amount; i++)
         {
-            balaDisponible.Disparar(
-                this.transform.position,        // origen: posicion del enemigo
-                objetivoReal.position      // destino: posicion actual del jugador (no lo sigue)
-            );
+            GameObject bala = Instantiate(balaPrefab);
+            bala.gameObject.SetActive(false);
+            poolBalas.Add(bala);
+            bala.transform.parent = this.transform;
         }
+    }
+
+    public GameObject ActivarBala()
+    {
+        for (int i = 0; i < poolBalas.Count; i++)
+        {
+            if (!poolBalas[i].activeSelf)
+            {
+                poolBalas[i].SetActive(true);
+                return poolBalas[i];
+            }
+        }
+        AddBalaToPool(1);
+        poolBalas[poolBalas.Count - 1].SetActive(true);
+        return poolBalas[poolBalas.Count - 1];
     }
 }

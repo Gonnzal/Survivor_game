@@ -14,7 +14,7 @@ public class PooledEnemy : MonoBehaviour
     // Llama esto desde el script del enemigo
     public void ReturnToPool()
     {
-        spawnManager.ReturnToPool(gameObject);
+        // spawnManager.ReturnToPool(gameObject);
     }
 }
 

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnManager : MonoBehaviour
+public class SpawnManagerOld : MonoBehaviour
 {
     [Header("Puntos de Spawn")]
     public List<Transform> spawnPoints = new();
