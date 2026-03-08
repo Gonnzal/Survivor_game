@@ -4,8 +4,8 @@ public class Scream : MonoBehaviour
 {
     private Rigidbody2D rb2D;
     private Animator animator;
-    private float lifeTime = 3f;
-    private float speed = 5f;
+    //private float lifeTime = 3f;
+    //private float speed = 5f;
 
     void Awake()
     {
