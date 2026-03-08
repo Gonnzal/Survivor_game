@@ -119,6 +119,53 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &40079426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 40079428}
+  - component: {fileID: 40079427}
+  m_Layer: 0
+  m_Name: manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &40079427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40079426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2b11aca7be72e54b9ec5fcaca6627df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roundCount: 2
+  timeCounter: {fileID: 1118853397}
+  roundDuration: 5
+--- !u!4 &40079428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40079426}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 397.06296, y: 261.7868, z: -5.1362977}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &93354071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -525,6 +572,17 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &1118853397 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 385662994209459660, guid: 9b5259e1dfbf8bc418112254b667a2a8, type: 3}
+  m_PrefabInstance: {fileID: 1933331896782697644}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1882090841 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 879656888537871785, guid: 0b5e1c01ebe397643a12757a451ae477, type: 3}
@@ -650,11 +708,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 385662994209459660, guid: 9b5259e1dfbf8bc418112254b667a2a8, type: 3}
       propertyPath: m_text
-      value: 1:00
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 385662994209459660, guid: 9b5259e1dfbf8bc418112254b667a2a8, type: 3}
       propertyPath: m_fontSize
-      value: 56.55
+      value: 30.6
       objectReference: {fileID: 0}
     - target: {fileID: 385662994209459660, guid: 9b5259e1dfbf8bc418112254b667a2a8, type: 3}
       propertyPath: m_isRightToLeft
@@ -840,3 +898,4 @@ SceneRoots:
   - {fileID: 7114369327931486039}
   - {fileID: 1933331896782697644}
   - {fileID: 465312476}
+  - {fileID: 40079428}
