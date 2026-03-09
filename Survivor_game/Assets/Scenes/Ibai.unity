@@ -349,6 +349,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1592620497536908648, guid: 9b5259e1dfbf8bc418112254b667a2a8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1592620497536908648, guid: 9b5259e1dfbf8bc418112254b667a2a8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1962080761713061521, guid: 9b5259e1dfbf8bc418112254b667a2a8, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -599,10 +607,12 @@ MonoBehaviour:
   cooldown: 1
   health: 0
   canAttack: 1
+  player: {fileID: 0}
   playerHealth: {fileID: 0}
   distanceX: 0
   distanceY: 0
   distance: 0
+  pooledEnemy: {fileID: 0}
 --- !u!1 &1919737330
 GameObject:
   m_ObjectHideFlags: 0
