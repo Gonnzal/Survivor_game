@@ -30,8 +30,9 @@ public class Scream : MonoBehaviour
     //    }
     //}
 
-    public void DispararScream()
+    public void DispararScream(Vector2 origen)
     {
+        this.transform.position = origen;
         gameObject.SetActive(true);
         // animator.SetTrigger("Scream");
     }

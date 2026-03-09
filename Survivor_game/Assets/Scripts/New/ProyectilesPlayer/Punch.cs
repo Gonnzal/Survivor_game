@@ -33,6 +33,7 @@ public class Punch : MonoBehaviour
         transform.position = origen;
         lifeTime = 3f;
 
+        if (rb2D == null) { rb2D = GetComponent<Rigidbody2D>(); }
         Vector2 direccion = (destino - origen).normalized;
         rb2D.linearVelocity = direccion * speed;
     }

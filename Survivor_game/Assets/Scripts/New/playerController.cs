@@ -1,16 +1,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public struct PlayerState
+{
+    public float coolDownMax1;
+    public float coolDownMax2;
+    public float coolDownMax3;
+    public float coolDownDashMax;
+    public float maxDashTime;
+    public float defaultSpeed;
+    public float dashSpeed;
+}
 public class playerController : MonoBehaviour
 {
-    [SerializeField]float coolDownMax1;
-    [SerializeField]float coolDownMax2;
-    [SerializeField]float coolDownMax3;
-    [SerializeField] float coolDownDashMax;
-    [SerializeField] float maxDashTime;
-    [SerializeField] float defaultSpeed;
-    [SerializeField] float dashSpeed;
-    [SerializeField] float maxHealth;
+    [SerializeField]private float maxHealth;
+
+    public PlayerState[] state;
+    protected PlayerState currentState;
+
     float health;
     float coolDown1;
     float coolDown2;
@@ -40,12 +48,13 @@ public class playerController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        coolDown1 = coolDownMax1;
-        coolDown2 = coolDownMax2;
-        coolDown3 = coolDownMax3;
+        currentState = state[0];
+        coolDown1 = currentState.coolDownMax1;
+        coolDown2 = currentState.coolDownMax2;
+        coolDown3 = currentState.coolDownMax3;
         dashing = false;
         dashTime = 0;
-        speed = defaultSpeed;
+        speed = currentState.defaultSpeed;
         health = maxHealth;
         AddPunchToPool(punchSize);
         AddAxeToPool(axeSize);
@@ -91,6 +100,24 @@ public class playerController : MonoBehaviour
 
     }
 
+    public void ReceiveDamage(int damage)
+    {
+        health -= damage;
+
+        if (health <= maxHealth * 0.75f && health > maxHealth * 0.5f)
+        {
+            currentState = state[1];
+        }
+        else if (health <= maxHealth * 0.5f && health > maxHealth * 0.25f)
+        {
+            currentState = state[2];
+        }
+        else if (health <= maxHealth * 0.25f)
+        {
+            currentState = state[3];
+        }
+    }
+
     void FindEnemy()
     {
         // Solo busca dentro del radio, usando el motor de fisica
@@ -131,7 +158,7 @@ public class playerController : MonoBehaviour
             GameObject dispPunch = ActivarPunch();
             Punch punchScript = dispPunch.GetComponent<Punch>();
             punchScript.DispararPunch(this.transform.position, objetivoReal.position);
-            coolDown1 = coolDownMax1;
+            coolDown1 = currentState.coolDownMax1;
         }
         else
         {    
@@ -148,7 +175,7 @@ public class playerController : MonoBehaviour
             GameObject dispAxe = ActivarAxe();
             Axe axeScript = dispAxe.GetComponent<Axe>();
             axeScript.DispararAxe(this.transform.position, objetivoReal.position);
-            coolDown2 = coolDownMax2;
+            coolDown2 = currentState.coolDownMax2;
         }
         else
         {    
@@ -164,8 +191,8 @@ public class playerController : MonoBehaviour
         {
             GameObject dispScream = ActivarScream();
             Scream screamScript = dispScream.GetComponent<Scream>();
-            screamScript.DispararScream();
-            coolDown3 = coolDownMax3;
+            screamScript.DispararScream(this.transform.position);
+            coolDown3 = currentState.coolDownMax3;
         }
         else
         {    
@@ -255,8 +282,8 @@ public class playerController : MonoBehaviour
     {
         if(coolDownDash <= 0)
         {
-            speed = dashSpeed;
-            coolDownDash = coolDownDashMax;
+            speed = currentState.dashSpeed;
+            coolDownDash = currentState.coolDownDashMax;
             dashing = true;
         }
     }
@@ -272,10 +299,10 @@ public class playerController : MonoBehaviour
         {
             Debug.Log("Dash");
             dashTime += Time.deltaTime;
-            if(dashTime >= maxDashTime)
+            if(dashTime >= currentState.maxDashTime)
             {
                 dashing = false;
-                speed = defaultSpeed;
+                speed = currentState.defaultSpeed;
                 dashTime = 0;
             }
         }
