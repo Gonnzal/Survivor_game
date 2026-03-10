@@ -13,7 +13,7 @@ public class DistanceAI : EnemyAI
     {
         vidaMax = 10;
         velocidad = 5;
-        danio = 5f;
+        danio = 5;
         distanciaJugador = 5f;
         base.Start();
         rb2D.mass = 1f;

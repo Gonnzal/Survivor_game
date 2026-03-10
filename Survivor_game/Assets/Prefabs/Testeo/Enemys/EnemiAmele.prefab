@@ -108,6 +108,7 @@ MonoBehaviour:
   objetivoReal: {fileID: 0}
   vida: 30
   distanciaJugador: 0.5
+  cooldownMax: 5
 --- !u!58 &-7730550026336116615
 CircleCollider2D:
   m_ObjectHideFlags: 0
