@@ -11,10 +11,11 @@ public class EnemyAI : MonoBehaviour
     protected float danio;
     private Animator animator;
     protected Rigidbody2D rb2D;
+    int objective;
 
     protected virtual void Start()
     {
-        objetivoReal = objetivos[Random.Range(0, objetivos.Length)];
+        objective = Random.Range(0, 2);
         danio = 1;
         vida = vidaMax;
         if (animator == null) { animator = GetComponent<Animator>(); }
@@ -23,6 +24,7 @@ public class EnemyAI : MonoBehaviour
 
     protected virtual void Update()
     {
+        objetivoReal = objetivos[objective];
         Moverse();
     }
 
@@ -44,7 +46,10 @@ public class EnemyAI : MonoBehaviour
     public void ReciveDanio(int danio)
     {
         vida -= danio;
-        Muerte();
+        if(vida <= 0)
+        {
+            Muerte();
+        }
     }
 
     void Muerte()

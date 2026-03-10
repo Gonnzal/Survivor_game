@@ -5,6 +5,7 @@ public class BalaEnemy : MonoBehaviour
     private Rigidbody2D rb2D;
     private float lifeTime = 3f;
     private float speed = 5f;
+    [SerializeField] int damage;
 
     void Awake()
     {
@@ -35,7 +36,13 @@ public class BalaEnemy : MonoBehaviour
 
         Vector2 direccion = (destino - origen).normalized;
         rb2D.linearVelocity = direccion * speed;
+    }
 
-        
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.TryGetComponent<playerController>(out playerController obj))
+        {
+            obj.TakeDamage(damage);
+        }
     }
 }

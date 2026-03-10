@@ -19,7 +19,7 @@ public class playerController : MonoBehaviour
     public PlayerState[] state;
     protected PlayerState currentState;
 
-    float health;
+    [SerializeField] float health;
     float coolDown1;
     float coolDown2;
     float coolDown3;
@@ -41,6 +41,7 @@ public class playerController : MonoBehaviour
     [SerializeField] private LayerMask enemyLayer;
     [SerializeField] private float detectionRadius = 20f;
     private Transform objetivoReal;
+    [SerializeField] Rounds canvas;
 
     private float searchTimer = 0f;
     private float searchRate = 0.2f; // actualiza 5 veces por segundo
@@ -311,6 +312,10 @@ public class playerController : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        if(health <= 0)
+        {
+            canvas.DeathCanvas();
+        }
     }
 
     public void Heal(int heal)
