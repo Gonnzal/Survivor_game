@@ -11,13 +11,14 @@ public struct PlayerState
     public float maxDashTime;
     public float defaultSpeed;
     public float dashSpeed;
+    public float danioMax;
 }
 public class playerController : MonoBehaviour
 {
     [SerializeField]private float maxHealth;
 
     public PlayerState[] state;
-    protected PlayerState currentState;
+    public PlayerState currentState;
 
     [SerializeField] float health;
     float coolDown1;
@@ -27,6 +28,7 @@ public class playerController : MonoBehaviour
     bool dashing;
     float dashTime;
     float speed;
+    public float danio;
 
     public List<GameObject> poolPunch = new List<GameObject>();
     public List<GameObject> poolAxe = new List<GameObject>();
@@ -57,6 +59,7 @@ public class playerController : MonoBehaviour
         dashTime = 0;
         speed = currentState.defaultSpeed;
         health = maxHealth;
+        danio = currentState.danioMax;
         AddPunchToPool(punchSize);
         AddAxeToPool(axeSize);
         AddScreamToPool(screamSize);
