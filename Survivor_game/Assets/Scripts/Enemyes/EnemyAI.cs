@@ -1,8 +1,11 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    public Transform[] objetivos;
+    
+
+    public List<Transform> targets = new List<Transform>();
     public Transform objetivoReal;
     public float vida;
     protected float vidaMax;
@@ -15,7 +18,9 @@ public class EnemyAI : MonoBehaviour
 
     protected virtual void Start()
     {
-        objective = Random.Range(0, 2);
+        targets.Add(Tower.instance.transform);
+        targets.Add(playerController.instance.transform);
+        objective = Random.Range(0, targets.Count);
         danio = 1;
         vida = vidaMax;
         if (animator == null) { animator = GetComponent<Animator>(); }
@@ -24,7 +29,7 @@ public class EnemyAI : MonoBehaviour
 
     protected virtual void Update()
     {
-        objetivoReal = objetivos[objective];
+        objetivoReal = targets[objective];
         Moverse();
     }
 

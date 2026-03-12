@@ -3,8 +3,16 @@ using UnityEngine;
 
 public class Tower : MonoBehaviour
 {
+    public static Tower instance;
+
     [SerializeField] private float maxHealth;
     private float health;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

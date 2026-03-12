@@ -15,6 +15,10 @@ public struct PlayerState
 }
 public class playerController : MonoBehaviour
 {
+    public static playerController instance;
+
+    public Rigidbody2D rb; 
+
     [SerializeField]private float maxHealth;
 
     public PlayerState[] state;
@@ -32,10 +36,10 @@ public class playerController : MonoBehaviour
 
     public List<GameObject> poolPunch = new List<GameObject>();
     public List<GameObject> poolAxe = new List<GameObject>();
-    public List<GameObject> poolScream = new List<GameObject>();
+
     private int punchSize = 2;
     private int axeSize = 2;
-    private int screamSize = 2;
+
     public GameObject punch;
     public GameObject axe;
     public GameObject scream;
@@ -48,9 +52,15 @@ public class playerController : MonoBehaviour
     private float searchTimer = 0f;
     private float searchRate = 0.2f; // actualiza 5 veces por segundo
 
+    private void Awake()
+    {
+        instance = this;
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         currentState = state[0];
         coolDown1 = currentState.coolDownMax1;
         coolDown2 = currentState.coolDownMax2;
@@ -62,7 +72,28 @@ public class playerController : MonoBehaviour
         danio = currentState.danioMax;
         AddPunchToPool(punchSize);
         AddAxeToPool(axeSize);
-        AddScreamToPool(screamSize);
+    }
+
+    private void FixedUpdate()
+    {
+        Vector3 targertPosition = Vector3.zero;
+        if (Input.GetKey(KeyCode.W))
+        {
+            targertPosition += transform.up * speed * Time.deltaTime;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            targertPosition += -transform.up * speed * Time.deltaTime;
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            targertPosition += -transform.right * speed * Time.deltaTime;
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            targertPosition += transform.right * speed * Time.deltaTime;
+        }
+        rb.MovePosition(transform.position + targertPosition);
     }
 
     // Update is called once per frame
@@ -78,25 +109,30 @@ public class playerController : MonoBehaviour
         Ataque2();
         Ataque3();
         DashCheck();
-        if(Input.GetKey(KeyCode.W))
-        {
-            transform.position = new Vector2(transform.position.x, transform.position.y + speed * Time.deltaTime);
-        }
+        //if(Input.GetKey(KeyCode.W))
+        //{
+        //    float targetY = transform.position.y + speed * Time.deltaTime;
+        //    if (targetY > 49)
+        //    {
+        //        targetY = 49;
+        //    }
+        //    transform.position = new Vector2(transform.position.x, targetY);
+        //}
 
-        if(Input.GetKey(KeyCode.S))
-        {
-            transform.position = new Vector2(transform.position.x, transform.position.y - speed * Time.deltaTime);
-        }
+        //if(Input.GetKey(KeyCode.S))
+        //{
+        //    transform.position = new Vector2(transform.position.x, transform.position.y - speed * Time.deltaTime);
+        //}
 
-        if(Input.GetKey(KeyCode.A))
-        {
-            transform.position = new Vector2(transform.position.x - speed * Time.deltaTime, transform.position.y);
-        }
+        //if(Input.GetKey(KeyCode.A))
+        //{
+        //    transform.position = new Vector2(transform.position.x - speed * Time.deltaTime, transform.position.y);
+        //}
 
-        if(Input.GetKey(KeyCode.D))
-        {
-            transform.position = new Vector2(transform.position.x + speed * Time.deltaTime, transform.position.y);
-        }
+        //if(Input.GetKey(KeyCode.D))
+        //{
+        //    transform.position = new Vector2(transform.position.x + speed * Time.deltaTime, transform.position.y);
+        //}
         if(Input.GetKeyDown(KeyCode.LeftShift))
         {
             Dash();
@@ -193,9 +229,7 @@ public class playerController : MonoBehaviour
 
         if (coolDown3 <= 0)
         {
-            GameObject dispScream = ActivarScream();
-            Scream screamScript = dispScream.GetComponent<Scream>();
-            screamScript.DispararScream(this.transform.position);
+            scream.GetComponent<Scream>().DispararScream(this.transform.position);
             coolDown3 = currentState.coolDownMax3;
         }
         else
@@ -210,7 +244,7 @@ public class playerController : MonoBehaviour
         {
             GameObject punchP = Instantiate(punch);
             punchP.gameObject.SetActive(false);
-            poolPunch.Add(punch);
+            poolPunch.Add(punchP); 
             punchP.transform.parent = this.transform;
         }
     }
@@ -223,17 +257,6 @@ public class playerController : MonoBehaviour
             axeP.gameObject.SetActive(false);
             poolAxe.Add(axeP);
             axeP.transform.parent = this.transform;
-        }
-    }
-
-    void AddScreamToPool(int amount)
-    {
-        for (int i = 0; i < amount; i++)
-        {
-            GameObject screamP = Instantiate(scream);
-            screamP.gameObject.SetActive(false);
-            poolScream.Add(screamP);
-            screamP.transform.parent = this.transform;
         }
     }
 
@@ -265,21 +288,6 @@ public class playerController : MonoBehaviour
         AddAxeToPool(1);
         poolAxe[poolAxe.Count - 1].SetActive(true);
         return poolAxe[poolAxe.Count - 1];
-    }
-
-    public GameObject ActivarScream()
-    {
-        for (int i = 0; i < poolScream.Count; i++)
-        {
-            if (!poolScream[i].activeSelf)
-            {
-                poolScream[i].SetActive(true);
-                return poolScream[i];
-            }
-        }
-        AddScreamToPool(1);
-        poolScream[poolScream.Count - 1].SetActive(true);
-        return poolScream[poolScream.Count - 1];
     }
 
     void Dash()
