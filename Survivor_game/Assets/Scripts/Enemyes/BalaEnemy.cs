@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class BalaEnemy : MonoBehaviour
 {
@@ -35,6 +36,10 @@ public class BalaEnemy : MonoBehaviour
         lifeTime = 3f;
 
         Vector2 direccion = (destino - origen).normalized;
+
+        if (direccion.x < 0f)
+        transform.localScale = new Vector2(-1, 1);
+
         rb2D.linearVelocity = direccion * speed;
     }
 

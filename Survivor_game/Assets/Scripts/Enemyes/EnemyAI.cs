@@ -12,7 +12,7 @@ public class EnemyAI : MonoBehaviour
     protected float velocidad;
     public float distanciaJugador;
     protected int danio;
-    private Animator animator;
+    protected Animator animator;
     protected Rigidbody2D rb2D;
     int objective;
 

@@ -19,23 +19,10 @@ public class AmeleAI : EnemyAI
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.TryGetComponent<playerController>(out playerController obj))
+        animator.SetTrigger("Bite");
+        if (collision.gameObject.TryGetComponent<playerController>(out playerController obj))
         {
             obj.ReceiveDamage(danio);
         }
     }
-
-    void OTriggerStay2D(Collider2D collision)
-    {
-        if(collision.gameObject.TryGetComponent<playerController>(out playerController obj))
-        {
-            if (cooldown >= cooldownMax)
-            {
-                obj.ReceiveDamage(danio);
-                cooldown = 0;
-            }
-            cooldown += Time.deltaTime;
-        }
-    }
-
 }
