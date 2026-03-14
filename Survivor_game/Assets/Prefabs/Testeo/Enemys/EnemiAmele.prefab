@@ -102,9 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25e7e82a846850746a16df8b2f0f41b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetivos:
-  - {fileID: 125763835437406809, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
-  - {fileID: 6831590816065192631, guid: 9f425a6dac7c51843a73e3bfd831fda7, type: 3}
+  targets: []
   objetivoReal: {fileID: 0}
   vida: 30
   distanciaJugador: 0.5
@@ -139,7 +137,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

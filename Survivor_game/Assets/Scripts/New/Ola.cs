@@ -4,7 +4,7 @@ public class Ola : MonoBehaviour
 {
     private int damage = 99999;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Sweeper collided with: " + other.gameObject.name);
         if (other.gameObject.TryGetComponent<AmeleAI>(out AmeleAI enemy))
@@ -16,7 +16,6 @@ public class Ola : MonoBehaviour
         {
             enemy2.ReciveDanio(damage);
         }
-        DesactiveOla();
     }
 
 

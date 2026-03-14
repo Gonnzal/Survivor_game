@@ -144,17 +144,13 @@ public class playerController : MonoBehaviour
     {
         health -= damage;
 
-        if (health <= maxHealth * 0.75f && health > maxHealth * 0.5f)
+        if (health <= maxHealth * 0.66f && health > maxHealth * 0.33f)
         {
             currentState = state[1];
         }
-        else if (health <= maxHealth * 0.5f && health > maxHealth * 0.25f)
+        else if (health <= maxHealth * 0.33f && health > maxHealth * -10f)
         {
             currentState = state[2];
-        }
-        else if (health <= maxHealth * 0.25f)
-        {
-            currentState = state[3];
         }
     }
 
@@ -332,5 +328,21 @@ public class playerController : MonoBehaviour
     public void Heal(int heal)
     {
         health+= heal;
+    }
+
+    public void UpgradeWeapon1()
+    {
+        currentState.coolDownMax1 = currentState.coolDownMax1 * 0.8f;
+        currentState.danioMax = currentState.danioMax*1.2f;
+    }
+    public void UpgradeWeapon2()
+    {
+        currentState.coolDownMax2 = currentState.coolDownMax2 * 0.8f;
+        currentState.danioMax = currentState.danioMax*1.2f;
+    }
+    public void UpgradeWeapon3()
+    {
+        currentState.coolDownMax3 = currentState.coolDownMax3 * 0.8f;
+        currentState.danioMax = currentState.danioMax*1.2f;
     }
 }

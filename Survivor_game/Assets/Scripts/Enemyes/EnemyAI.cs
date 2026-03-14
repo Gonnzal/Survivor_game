@@ -63,7 +63,9 @@ public class EnemyAI : MonoBehaviour
         {
             danio = 0;
             velocidad = 0;
-            animator.SetTrigger("Dead");
+            //animator.SetTrigger("Dead");ç
+            this.gameObject.SetActive(false);
+            vida = vidaMax;
         }
     }
 
