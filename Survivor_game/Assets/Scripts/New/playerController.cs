@@ -188,13 +188,13 @@ public class playerController : MonoBehaviour
         }
         else
         {
-            for(int i = 0; i<= poolAxe.Count; i++)
+            for(int i = 0; i < poolAxe.Count; i++)
             {
                 poolAxe[i].SetActive(true);
                 poolAxe[i].GetComponent<Axe>().damage = currentState.danioMax + axeUpgrade;
                 poolAxe[i].SetActive(false);
             }
-            for(int i = 0; i<= poolPunch.Count; i++)
+            for(int i = 0; i < poolPunch.Count; i++)
             {
                 poolPunch[i].SetActive(true);
                 poolPunch[i].GetComponent<Punch>().damage = currentState.danioMax + axeUpgrade;
