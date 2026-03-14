@@ -14,6 +14,7 @@ public class Rounds : MonoBehaviour
     [SerializeField] Canvas win;
     [SerializeField] Canvas credits;
     [SerializeField] GameObject wave;
+    [SerializeField] CanvasGroup canvasGroup;
     int currentRound;
     float roundProgress;
     int minuteCount;
@@ -91,6 +92,8 @@ public class Rounds : MonoBehaviour
 
     public void StartRound()
     {
+        canvasGroup.alpha = 1;
+        canvasGroup.interactable = true;
         wave.SetActive(true);
         Time.timeScale = 1;
         gameCanvas.enabled = true;
@@ -116,6 +119,12 @@ public class Rounds : MonoBehaviour
     public void Exit()
     {
         Application.Quit();
+    }
+
+    public void Upgrade()
+    {
+        canvasGroup.alpha = 0.5f;
+        canvasGroup.interactable = false;
     }
 }
 

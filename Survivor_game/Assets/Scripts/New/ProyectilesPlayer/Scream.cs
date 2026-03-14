@@ -5,7 +5,6 @@ public class Scream : MonoBehaviour
     private Rigidbody2D rb2D;
     private Animator animator;
     public int damage;
-    int upgrade;
     //private float lifeTime = 3f;
     //private float speed = 5f;
 
@@ -54,16 +53,5 @@ public class Scream : MonoBehaviour
         {
             enemy2.ReciveDanio(damage);
         }
-    }
-
-    public void Upgrade()
-    {
-        upgrade+= 2;
-        ApplyUpgrade();
-    }
-
-    void ApplyUpgrade()
-    {
-        damage = damage + upgrade;
     }
 }

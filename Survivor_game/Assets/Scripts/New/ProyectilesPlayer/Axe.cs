@@ -6,7 +6,6 @@ public class Axe : MonoBehaviour
     private float lifeTime = 3f;
     private float speed = 5f;
     public int damage;
-    int upgrade;
 
     void Awake()
     {
@@ -52,16 +51,5 @@ public class Axe : MonoBehaviour
         {
             enemy2.ReciveDanio(damage);
         }
-    }
-
-    public void Upgrade()
-    {
-        upgrade+= 2;
-        ApplyUpgrade();
-    }
-
-    void ApplyUpgrade()
-    {
-        damage = damage + upgrade;
     }
 }
