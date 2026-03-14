@@ -5,6 +5,8 @@ public class Punch : MonoBehaviour
     private Rigidbody2D rb2D;
     private float lifeTime = 3f;
     private float speed = 5f;
+    public int damage;
+    int upgrade;
 
     void Awake()
     {
@@ -36,5 +38,28 @@ public class Punch : MonoBehaviour
         if (rb2D == null) { rb2D = GetComponent<Rigidbody2D>(); }
         Vector2 direccion = (destino - origen).normalized;
         rb2D.linearVelocity = direccion * speed;
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.TryGetComponent<AmeleAI>(out AmeleAI enemy))
+        {
+            enemy.ReciveDanio(damage);
+        }
+        else if(other.gameObject.TryGetComponent<DistanceAI>(out DistanceAI enemy2))
+        {
+            enemy2.ReciveDanio(damage);
+        }
+    }
+
+    public void Upgrade()
+    {
+        upgrade+= 2;
+        ApplyUpgrade();
+    }
+
+    void ApplyUpgrade()
+    {
+        damage = damage + upgrade;
     }
 }

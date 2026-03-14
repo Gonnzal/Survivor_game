@@ -11,7 +11,7 @@ public struct PlayerState
     public float maxDashTime;
     public float defaultSpeed;
     public float dashSpeed;
-    public float danioMax;
+    public int danioMax;
 }
 public class playerController : MonoBehaviour
 {
@@ -147,10 +147,16 @@ public class playerController : MonoBehaviour
         if (health <= maxHealth * 0.66f && health > maxHealth * 0.33f)
         {
             currentState = state[1];
+            axe.GetComponent<Axe>().damage = currentState.danioMax;
+            punch.GetComponent<Punch>().damage = currentState.danioMax;
+            scream.GetComponent<Scream>().damage = currentState.danioMax;
         }
         else if (health <= maxHealth * 0.33f && health > maxHealth * -10f)
         {
             currentState = state[2];
+            axe.GetComponent<Axe>().damage = currentState.danioMax;
+            punch.GetComponent<Punch>().damage = currentState.danioMax;
+            scream.GetComponent<Scream>().damage = currentState.danioMax;
         }
     }
 
@@ -328,21 +334,5 @@ public class playerController : MonoBehaviour
     public void Heal(int heal)
     {
         health+= heal;
-    }
-
-    public void UpgradeWeapon1()
-    {
-        currentState.coolDownMax1 = currentState.coolDownMax1 * 0.8f;
-        currentState.danioMax = currentState.danioMax*1.2f;
-    }
-    public void UpgradeWeapon2()
-    {
-        currentState.coolDownMax2 = currentState.coolDownMax2 * 0.8f;
-        currentState.danioMax = currentState.danioMax*1.2f;
-    }
-    public void UpgradeWeapon3()
-    {
-        currentState.coolDownMax3 = currentState.coolDownMax3 * 0.8f;
-        currentState.danioMax = currentState.danioMax*1.2f;
     }
 }

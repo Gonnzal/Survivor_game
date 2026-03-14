@@ -91,6 +91,7 @@ public class Rounds : MonoBehaviour
 
     public void StartRound()
     {
+        wave.SetActive(true);
         Time.timeScale = 1;
         gameCanvas.enabled = true;
         mainMenu.enabled = false;
@@ -115,11 +116,6 @@ public class Rounds : MonoBehaviour
     public void Exit()
     {
         Application.Quit();
-    }
-
-    public void RestartGame()
-    {
-        SceneManager.LoadScene("Testeo");
     }
 }
 
