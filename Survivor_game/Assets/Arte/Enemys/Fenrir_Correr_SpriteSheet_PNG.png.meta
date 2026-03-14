@@ -1,34 +1,25 @@
 fileFormatVersion: 2
-guid: 2848389a472f46a4e9aa65b2284cd855
+guid: 4f0066b3676aac549abc0428a8603271
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2353294542063304563
-    second: walkcycle_spritesheet_0
+      213: 2530455728991513094
+    second: Fenrir_Correr_SpriteSheet_PNG_0
   - first:
-      213: 6240704383115504216
-    second: walkcycle_spritesheet_1
+      213: 7023051031759600026
+    second: Fenrir_Correr_SpriteSheet_PNG_1
   - first:
-      213: 6777713400783204268
-    second: walkcycle_spritesheet_2
+      213: -5005000679991805675
+    second: Fenrir_Correr_SpriteSheet_PNG_2
   - first:
-      213: 132128815785036413
-    second: walkcycle_spritesheet_3
+      213: -412579187097671439
+    second: Fenrir_Correr_SpriteSheet_PNG_3
   - first:
-      213: 8341699169875794992
-    second: walkcycle_spritesheet_4
+      213: 3471391354461468145
+    second: Fenrir_Correr_SpriteSheet_PNG_4
   - first:
-      213: -6660382052367454344
-    second: walkcycle_spritesheet_5
-  - first:
-      213: -2640218151233712598
-    second: walkcycle_spritesheet_6
-  - first:
-      213: 2250777886274651902
-    second: walkcycle_spritesheet_7
-  - first:
-      213: 6092157049609821808
-    second: walkcycle_spritesheet_8
+      213: -1535026012034339439
+    second: Fenrir_Correr_SpriteSheet_PNG_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,7 +87,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -137,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walkcycle_spritesheet_0
+      name: Fenrir_Correr_SpriteSheet_PNG_0
       rect:
         serializedVersion: 2
-        x: 74
-        y: 15
-        width: 208
-        height: 600
+        x: 56
+        y: 173
+        width: 776
+        height: 287
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d808370151b675fd0800000000000000
-      internalID: -2353294542063304563
+      spriteID: 60a246e141cfd1320800000000000000
+      internalID: 2530455728991513094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkcycle_spritesheet_1
+      name: Fenrir_Correr_SpriteSheet_PNG_1
       rect:
         serializedVersion: 2
-        x: 513
-        y: 19
-        width: 265
-        height: 604
+        x: 909
+        y: 102
+        width: 710
+        height: 356
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 85aa2df529f6b9650800000000000000
-      internalID: 6240704383115504216
+      spriteID: a99b87324b3e67160800000000000000
+      internalID: 7023051031759600026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkcycle_spritesheet_2
+      name: Fenrir_Correr_SpriteSheet_PNG_2
       rect:
         serializedVersion: 2
-        x: 921
-        y: 15
-        width: 400
-        height: 570
+        x: 1644
+        y: 100
+        width: 645
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: caf661b9d664f0e50800000000000000
-      internalID: 6777713400783204268
+      spriteID: 519ff70366aaa8ab0800000000000000
+      internalID: -5005000679991805675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkcycle_spritesheet_3
+      name: Fenrir_Correr_SpriteSheet_PNG_3
       rect:
         serializedVersion: 2
-        x: 1349
-        y: 18
-        width: 379
-        height: 537
+        x: 2366
+        y: 97
+        width: 653
+        height: 367
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +209,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d7ac579357a65d100800000000000000
-      internalID: 132128815785036413
+      spriteID: 1f8e25f4a69364af0800000000000000
+      internalID: -412579187097671439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkcycle_spritesheet_4
+      name: Fenrir_Correr_SpriteSheet_PNG_4
       rect:
         serializedVersion: 2
-        x: 1841
-        y: 18
-        width: 254
-        height: 565
+        x: 3081
+        y: 103
+        width: 634
+        height: 329
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03c1e93e23ba3c370800000000000000
-      internalID: 8341699169875794992
+      spriteID: 1f5b90f6b0cdc2030800000000000000
+      internalID: 3471391354461468145
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkcycle_spritesheet_5
+      name: Fenrir_Correr_SpriteSheet_PNG_5
       rect:
         serializedVersion: 2
-        x: 2299
-        y: 15
-        width: 210
-        height: 599
+        x: 3792
+        y: 103
+        width: 764
+        height: 344
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,74 +253,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 87f2044cfc19193a0800000000000000
-      internalID: -6660382052367454344
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walkcycle_spritesheet_6
-      rect:
-        serializedVersion: 2
-        x: 2733
-        y: 18
-        width: 270
-        height: 605
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a2e0d26749f0c5bd0800000000000000
-      internalID: -2640218151233712598
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walkcycle_spritesheet_7
-      rect:
-        serializedVersion: 2
-        x: 3142
-        y: 15
-        width: 404
-        height: 571
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ef684bbff8e5c3f10800000000000000
-      internalID: 2250777886274651902
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walkcycle_spritesheet_8
-      rect:
-        serializedVersion: 2
-        x: 3574
-        y: 19
-        width: 379
-        height: 539
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 07e92e91f80bb8450800000000000000
-      internalID: 6092157049609821808
+      spriteID: 19d65b799fd72bae0800000000000000
+      internalID: -1535026012034339439
       vertices: []
       indices: 
       edges: []
@@ -348,15 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      walkcycle_spritesheet_0: -2353294542063304563
-      walkcycle_spritesheet_1: 6240704383115504216
-      walkcycle_spritesheet_2: 6777713400783204268
-      walkcycle_spritesheet_3: 132128815785036413
-      walkcycle_spritesheet_4: 8341699169875794992
-      walkcycle_spritesheet_5: -6660382052367454344
-      walkcycle_spritesheet_6: -2640218151233712598
-      walkcycle_spritesheet_7: 2250777886274651902
-      walkcycle_spritesheet_8: 6092157049609821808
+      Fenrir_Correr_SpriteSheet_PNG_0: 2530455728991513094
+      Fenrir_Correr_SpriteSheet_PNG_1: 7023051031759600026
+      Fenrir_Correr_SpriteSheet_PNG_2: -5005000679991805675
+      Fenrir_Correr_SpriteSheet_PNG_3: -412579187097671439
+      Fenrir_Correr_SpriteSheet_PNG_4: 3471391354461468145
+      Fenrir_Correr_SpriteSheet_PNG_5: -1535026012034339439
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

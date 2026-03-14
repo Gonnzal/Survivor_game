@@ -1,0 +1,858 @@
+fileFormatVersion: 2
+guid: cd536c79b6e9a944889d63a2f09f5d09
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 304384799102440702
+    second: shockwave_0
+  - first:
+      213: 4082664804954419067
+    second: shockwave_1
+  - first:
+      213: -3494165674877672788
+    second: shockwave_2
+  - first:
+      213: -2878292575654378767
+    second: shockwave_3
+  - first:
+      213: 5525974637050776257
+    second: shockwave_4
+  - first:
+      213: -2702475465223190161
+    second: shockwave_5
+  - first:
+      213: 933123482273190919
+    second: shockwave_6
+  - first:
+      213: -8128468405736905527
+    second: shockwave_7
+  - first:
+      213: -2820235944308130830
+    second: shockwave_8
+  - first:
+      213: 1712156119248900282
+    second: shockwave_9
+  - first:
+      213: -6359182092396935303
+    second: shockwave_10
+  - first:
+      213: 5146935211779393606
+    second: shockwave_11
+  - first:
+      213: 1568886398231747216
+    second: shockwave_12
+  - first:
+      213: 1976886914030894880
+    second: shockwave_13
+  - first:
+      213: 5272358246533432092
+    second: shockwave_14
+  - first:
+      213: -3449309365858122711
+    second: shockwave_15
+  - first:
+      213: -7732792079371446736
+    second: shockwave_16
+  - first:
+      213: 3089007001756102739
+    second: shockwave_17
+  - first:
+      213: -5262707885293175608
+    second: shockwave_18
+  - first:
+      213: 1064822070521159621
+    second: shockwave_19
+  - first:
+      213: -8522790275879800449
+    second: shockwave_20
+  - first:
+      213: 741338700612339900
+    second: shockwave_21
+  - first:
+      213: 4933077998353522397
+    second: shockwave_22
+  - first:
+      213: -2920802349744740249
+    second: shockwave_23
+  - first:
+      213: -8952015077050574851
+    second: shockwave_24
+  - first:
+      213: 6852267216751046318
+    second: shockwave_25
+  - first:
+      213: 3865733870216327455
+    second: shockwave_26
+  - first:
+      213: -4297406573247212863
+    second: shockwave_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: shockwave_0
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 738
+        width: 108
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef49781bc54693400800000000000000
+      internalID: 304384799102440702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_1
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 774
+        width: 97
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f2c4c520a88a830800000000000000
+      internalID: 4082664804954419067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_2
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 799
+        width: 155
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca2ad82e4da328fc0800000000000000
+      internalID: -3494165674877672788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_3
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 825
+        width: 45
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f20a7cf6204e08d0800000000000000
+      internalID: -2878292575654378767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_4
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 829
+        width: 35
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1caca3f87a430bc40800000000000000
+      internalID: 5525974637050776257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_5
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 818
+        width: 72
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f69c929f1e0ee7ad0800000000000000
+      internalID: -2702475465223190161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_6
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 793
+        width: 183
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 704187cfcde13fc00800000000000000
+      internalID: 933123482273190919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_7
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 772
+        width: 133
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c4e01c2d01e13f80800000000000000
+      internalID: -8128468405736905527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_8
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 627
+        width: 194
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fbb9b4d9528cd8d0800000000000000
+      internalID: -2820235944308130830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_9
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 699
+        width: 118
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab097d74becc2c710800000000000000
+      internalID: 1712156119248900282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_10
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 716
+        width: 138
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 977c7a05495afb7a0800000000000000
+      internalID: -6359182092396935303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_11
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 666
+        width: 149
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6488f043e469d6740800000000000000
+      internalID: 5146935211779393606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_12
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 565
+        width: 140
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a9b8bedddc5c510800000000000000
+      internalID: 1568886398231747216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_13
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 590
+        width: 208
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02ffdef9c205f6b10800000000000000
+      internalID: 1976886914030894880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_14
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 494
+        width: 149
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c130a3d14ed2b2940800000000000000
+      internalID: 5272358246533432092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_15
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 552
+        width: 120
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924499f28679120d0800000000000000
+      internalID: -3449309365858122711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_16
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 503
+        width: 121
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0365c1be29a9fa490800000000000000
+      internalID: -7732792079371446736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_17
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 412
+        width: 213
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 350fd58708b5eda20800000000000000
+      internalID: 3089007001756102739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_18
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 372
+        width: 212
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ccf374bf0b17f6b0800000000000000
+      internalID: -5262707885293175608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_19
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 445
+        width: 123
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cfd86e080207ce00800000000000000
+      internalID: 1064822070521159621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_20
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 372
+        width: 155
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f71f7075667f8b980800000000000000
+      internalID: -8522790275879800449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_21
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 355
+        width: 130
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb88f34de93c94a00800000000000000
+      internalID: 741338700612339900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_22
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 296
+        width: 153
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde182d8d40d57440800000000000000
+      internalID: 4933077998353522397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_23
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 291
+        width: 130
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768a65cecb93777d0800000000000000
+      internalID: -2920802349744740249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_24
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 158
+        width: 213
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df7957c97bd04c380800000000000000
+      internalID: -8952015077050574851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_25
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 224
+        width: 152
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eae20809ab4281f50800000000000000
+      internalID: 6852267216751046318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_26
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 154
+        width: 219
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f11b0723978d5a530800000000000000
+      internalID: 3865733870216327455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shockwave_27
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 231
+        width: 129
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c2db228d7b8c54c0800000000000000
+      internalID: -4297406573247212863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      shockwave_0: 304384799102440702
+      shockwave_1: 4082664804954419067
+      shockwave_10: -6359182092396935303
+      shockwave_11: 5146935211779393606
+      shockwave_12: 1568886398231747216
+      shockwave_13: 1976886914030894880
+      shockwave_14: 5272358246533432092
+      shockwave_15: -3449309365858122711
+      shockwave_16: -7732792079371446736
+      shockwave_17: 3089007001756102739
+      shockwave_18: -5262707885293175608
+      shockwave_19: 1064822070521159621
+      shockwave_2: -3494165674877672788
+      shockwave_20: -8522790275879800449
+      shockwave_21: 741338700612339900
+      shockwave_22: 4933077998353522397
+      shockwave_23: -2920802349744740249
+      shockwave_24: -8952015077050574851
+      shockwave_25: 6852267216751046318
+      shockwave_26: 3865733870216327455
+      shockwave_27: -4297406573247212863
+      shockwave_3: -2878292575654378767
+      shockwave_4: 5525974637050776257
+      shockwave_5: -2702475465223190161
+      shockwave_6: 933123482273190919
+      shockwave_7: -8128468405736905527
+      shockwave_8: -2820235944308130830
+      shockwave_9: 1712156119248900282
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

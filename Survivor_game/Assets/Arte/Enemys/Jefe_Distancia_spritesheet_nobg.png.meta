@@ -1,34 +1,46 @@
 fileFormatVersion: 2
-guid: 2848389a472f46a4e9aa65b2284cd855
+guid: c42bd9a4f8e6dd347a5d8612af773e3b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2353294542063304563
-    second: walkcycle_spritesheet_0
+      213: -6134999604181276962
+    second: Jefe_Distancia_spritesheet_nobg_0
   - first:
-      213: 6240704383115504216
-    second: walkcycle_spritesheet_1
+      213: -4896778614899470458
+    second: Jefe_Distancia_spritesheet_nobg_1
   - first:
-      213: 6777713400783204268
-    second: walkcycle_spritesheet_2
+      213: -132013380352295882
+    second: Jefe_Distancia_spritesheet_nobg_2
   - first:
-      213: 132128815785036413
-    second: walkcycle_spritesheet_3
+      213: -3710016540329101275
+    second: Jefe_Distancia_spritesheet_nobg_3
   - first:
-      213: 8341699169875794992
-    second: walkcycle_spritesheet_4
+      213: -633271263172710284
+    second: Jefe_Distancia_spritesheet_nobg_4
   - first:
-      213: -6660382052367454344
-    second: walkcycle_spritesheet_5
+      213: 2863496737450609080
+    second: Jefe_Distancia_spritesheet_nobg_5
   - first:
-      213: -2640218151233712598
-    second: walkcycle_spritesheet_6
+      213: -2672020710453454606
+    second: Jefe_Distancia_spritesheet_nobg_6
   - first:
-      213: 2250777886274651902
-    second: walkcycle_spritesheet_7
+      213: -1346333194089465072
+    second: Jefe_Distancia_spritesheet_nobg_7
   - first:
-      213: 6092157049609821808
-    second: walkcycle_spritesheet_8
+      213: 2313776869642452455
+    second: Jefe_Distancia_spritesheet_nobg_8
+  - first:
+      213: 5803092094604068208
+    second: Jefe_Distancia_spritesheet_nobg_9
+  - first:
+      213: 4125904694403669439
+    second: Jefe_Distancia_spritesheet_nobg_10
+  - first:
+      213: -5706653586300764562
+    second: Jefe_Distancia_spritesheet_nobg_11
+  - first:
+      213: -5042794315976255126
+    second: Jefe_Distancia_spritesheet_nobg_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +73,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,7 +108,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -137,13 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walkcycle_spritesheet_0
+      name: Jefe_Distancia_spritesheet_nobg_0
       rect:
         serializedVersion: 2
-        x: 74
-        y: 15
-        width: 208
-        height: 600
+        x: 0
+        y: 0
+        width: 1367
+        height: 1183
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d808370151b675fd0800000000000000
-      internalID: -2353294542063304563
+      spriteID: ed6ec975d5a1cdaa0800000000000000
+      internalID: -6134999604181276962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkcycle_spritesheet_1
+      name: Jefe_Distancia_spritesheet_nobg_1
       rect:
         serializedVersion: 2
-        x: 513
-        y: 19
-        width: 265
-        height: 604
+        x: 1367
+        y: 0
+        width: 1367
+        height: 1183
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 85aa2df529f6b9650800000000000000
-      internalID: 6240704383115504216
+      spriteID: 68f00334bc52b0cb0800000000000000
+      internalID: -4896778614899470458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkcycle_spritesheet_2
+      name: Jefe_Distancia_spritesheet_nobg_2
       rect:
         serializedVersion: 2
-        x: 921
-        y: 15
-        width: 400
-        height: 570
+        x: 2734
+        y: 0
+        width: 1367
+        height: 1183
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: caf661b9d664f0e50800000000000000
-      internalID: 6777713400783204268
+      spriteID: 63cb08ea78efa2ef0800000000000000
+      internalID: -132013380352295882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkcycle_spritesheet_3
+      name: Jefe_Distancia_spritesheet_nobg_3
       rect:
         serializedVersion: 2
-        x: 1349
-        y: 18
-        width: 379
-        height: 537
+        x: 4101
+        y: 0
+        width: 1367
+        height: 1183
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +230,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d7ac579357a65d100800000000000000
-      internalID: 132128815785036413
+      spriteID: 5283cd2fc9f538cc0800000000000000
+      internalID: -3710016540329101275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkcycle_spritesheet_4
+      name: Jefe_Distancia_spritesheet_nobg_4
       rect:
         serializedVersion: 2
-        x: 1841
-        y: 18
-        width: 254
-        height: 565
+        x: 5468
+        y: 0
+        width: 1367
+        height: 1183
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,96 +252,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03c1e93e23ba3c370800000000000000
-      internalID: 8341699169875794992
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walkcycle_spritesheet_5
-      rect:
-        serializedVersion: 2
-        x: 2299
-        y: 15
-        width: 210
-        height: 599
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 87f2044cfc19193a0800000000000000
-      internalID: -6660382052367454344
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walkcycle_spritesheet_6
-      rect:
-        serializedVersion: 2
-        x: 2733
-        y: 18
-        width: 270
-        height: 605
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a2e0d26749f0c5bd0800000000000000
-      internalID: -2640218151233712598
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walkcycle_spritesheet_7
-      rect:
-        serializedVersion: 2
-        x: 3142
-        y: 15
-        width: 404
-        height: 571
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ef684bbff8e5c3f10800000000000000
-      internalID: 2250777886274651902
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walkcycle_spritesheet_8
-      rect:
-        serializedVersion: 2
-        x: 3574
-        y: 19
-        width: 379
-        height: 539
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 07e92e91f80bb8450800000000000000
-      internalID: 6092157049609821808
+      spriteID: 470b020342b2637f0800000000000000
+      internalID: -633271263172710284
       vertices: []
       indices: 
       edges: []
@@ -338,7 +262,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e27d82649e3b97c4b914f5604733f662
     internalID: 0
     vertices: []
     indices: 
@@ -348,15 +272,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      walkcycle_spritesheet_0: -2353294542063304563
-      walkcycle_spritesheet_1: 6240704383115504216
-      walkcycle_spritesheet_2: 6777713400783204268
-      walkcycle_spritesheet_3: 132128815785036413
-      walkcycle_spritesheet_4: 8341699169875794992
-      walkcycle_spritesheet_5: -6660382052367454344
-      walkcycle_spritesheet_6: -2640218151233712598
-      walkcycle_spritesheet_7: 2250777886274651902
-      walkcycle_spritesheet_8: 6092157049609821808
+      Jefe_Distancia_spritesheet_nobg_0: -6134999604181276962
+      Jefe_Distancia_spritesheet_nobg_1: -4896778614899470458
+      Jefe_Distancia_spritesheet_nobg_2: -132013380352295882
+      Jefe_Distancia_spritesheet_nobg_3: -3710016540329101275
+      Jefe_Distancia_spritesheet_nobg_4: -633271263172710284
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

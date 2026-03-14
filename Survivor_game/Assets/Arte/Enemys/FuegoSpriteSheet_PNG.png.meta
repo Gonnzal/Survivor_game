@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: 2848389a472f46a4e9aa65b2284cd855
+guid: 41ebf24968150ef4eaa5887928e80134
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2353294542063304563
-    second: walkcycle_spritesheet_0
+      213: -520664493071097437
+    second: FuegoSpriteSheet_PNG_0
   - first:
-      213: 6240704383115504216
-    second: walkcycle_spritesheet_1
+      213: 8724278457920843879
+    second: FuegoSpriteSheet_PNG_1
   - first:
-      213: 6777713400783204268
-    second: walkcycle_spritesheet_2
+      213: -2668829480772970193
+    second: FuegoSpriteSheet_PNG_2
   - first:
-      213: 132128815785036413
-    second: walkcycle_spritesheet_3
+      213: -226421239424877494
+    second: FuegoSpriteSheet_PNG_3
   - first:
-      213: 8341699169875794992
-    second: walkcycle_spritesheet_4
+      213: 4688803105941635924
+    second: FuegoSpriteSheet_PNG_4
   - first:
-      213: -6660382052367454344
-    second: walkcycle_spritesheet_5
+      213: 2847203538827542356
+    second: FuegoSpriteSheet_PNG_5
   - first:
-      213: -2640218151233712598
-    second: walkcycle_spritesheet_6
+      213: -2175180056170810588
+    second: FuegoSpriteSheet_PNG_6
   - first:
-      213: 2250777886274651902
-    second: walkcycle_spritesheet_7
+      213: -8631341904601381909
+    second: FuegoSpriteSheet_PNG_7
   - first:
-      213: 6092157049609821808
-    second: walkcycle_spritesheet_8
+      213: 5417622329269664077
+    second: FuegoSpriteSheet_PNG_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +61,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -137,13 +137,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walkcycle_spritesheet_0
+      name: FuegoSpriteSheet_PNG_0
       rect:
         serializedVersion: 2
-        x: 74
-        y: 15
-        width: 208
-        height: 600
+        x: 60
+        y: 65
+        width: 300
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d808370151b675fd0800000000000000
-      internalID: -2353294542063304563
+      spriteID: 3a1a653f66a36c8f0800000000000000
+      internalID: -520664493071097437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkcycle_spritesheet_1
+      name: FuegoSpriteSheet_PNG_1
       rect:
         serializedVersion: 2
-        x: 513
-        y: 19
-        width: 265
-        height: 604
+        x: 360
+        y: 65
+        width: 300
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 85aa2df529f6b9650800000000000000
-      internalID: 6240704383115504216
+      spriteID: 760f6f5c80dd21970800000000000000
+      internalID: 8724278457920843879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkcycle_spritesheet_2
+      name: FuegoSpriteSheet_PNG_2
       rect:
         serializedVersion: 2
-        x: 921
-        y: 15
-        width: 400
-        height: 570
+        x: 660
+        y: 65
+        width: 300
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: caf661b9d664f0e50800000000000000
-      internalID: 6777713400783204268
+      spriteID: f29df603ab966fad0800000000000000
+      internalID: -2668829480772970193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkcycle_spritesheet_3
+      name: FuegoSpriteSheet_PNG_3
       rect:
         serializedVersion: 2
-        x: 1349
-        y: 18
-        width: 379
-        height: 537
+        x: 960
+        y: 65
+        width: 300
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d7ac579357a65d100800000000000000
-      internalID: 132128815785036413
+      spriteID: a4cf97615179bdcf0800000000000000
+      internalID: -226421239424877494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkcycle_spritesheet_4
+      name: FuegoSpriteSheet_PNG_4
       rect:
         serializedVersion: 2
-        x: 1841
-        y: 18
-        width: 254
-        height: 565
+        x: 1260
+        y: 65
+        width: 300
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,96 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03c1e93e23ba3c370800000000000000
-      internalID: 8341699169875794992
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walkcycle_spritesheet_5
-      rect:
-        serializedVersion: 2
-        x: 2299
-        y: 15
-        width: 210
-        height: 599
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 87f2044cfc19193a0800000000000000
-      internalID: -6660382052367454344
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walkcycle_spritesheet_6
-      rect:
-        serializedVersion: 2
-        x: 2733
-        y: 18
-        width: 270
-        height: 605
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a2e0d26749f0c5bd0800000000000000
-      internalID: -2640218151233712598
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walkcycle_spritesheet_7
-      rect:
-        serializedVersion: 2
-        x: 3142
-        y: 15
-        width: 404
-        height: 571
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ef684bbff8e5c3f10800000000000000
-      internalID: 2250777886274651902
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walkcycle_spritesheet_8
-      rect:
-        serializedVersion: 2
-        x: 3574
-        y: 19
-        width: 379
-        height: 539
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 07e92e91f80bb8450800000000000000
-      internalID: 6092157049609821808
+      spriteID: 453466f1599f11140800000000000000
+      internalID: 4688803105941635924
       vertices: []
       indices: 
       edges: []
@@ -338,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8dc38e3cbe7c83a47b69ede9e5b3ee25
     internalID: 0
     vertices: []
     indices: 
@@ -348,15 +260,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      walkcycle_spritesheet_0: -2353294542063304563
-      walkcycle_spritesheet_1: 6240704383115504216
-      walkcycle_spritesheet_2: 6777713400783204268
-      walkcycle_spritesheet_3: 132128815785036413
-      walkcycle_spritesheet_4: 8341699169875794992
-      walkcycle_spritesheet_5: -6660382052367454344
-      walkcycle_spritesheet_6: -2640218151233712598
-      walkcycle_spritesheet_7: 2250777886274651902
-      walkcycle_spritesheet_8: 6092157049609821808
+      FuegoSpriteSheet_PNG_0: -520664493071097437
+      FuegoSpriteSheet_PNG_1: 8724278457920843879
+      FuegoSpriteSheet_PNG_2: -2668829480772970193
+      FuegoSpriteSheet_PNG_3: -226421239424877494
+      FuegoSpriteSheet_PNG_4: 4688803105941635924
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
