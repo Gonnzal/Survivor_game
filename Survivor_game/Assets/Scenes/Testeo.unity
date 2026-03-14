@@ -577,60 +577,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6429666284038738533, guid: 253b528dfad824e48b0431489d6abe27, type: 3}
   m_PrefabInstance: {fileID: 1027768656}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1297363630
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1297363632}
-  - component: {fileID: 1297363631}
-  m_Layer: 0
-  m_Name: canvasManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1297363631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1297363630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2b11aca7be72e54b9ec5fcaca6627df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roundCount: 2
-  timeCounter: {fileID: 0}
-  roundDuration: 1
-  gameCanvas: {fileID: 0}
-  canvasBetweenRounds: {fileID: 0}
-  mainMenu: {fileID: 0}
-  death: {fileID: 0}
-  win: {fileID: 0}
-  credits: {fileID: 0}
-  wave: {fileID: 1801075911}
---- !u!4 &1297363632
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1297363630}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 786.73895, y: 434.35648, z: -2.7237937}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1529336184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1311,4 +1257,3 @@ SceneRoots:
   - {fileID: 3692087600101095695}
   - {fileID: 387325933321500415}
   - {fileID: 1529336187}
-  - {fileID: 1297363632}
