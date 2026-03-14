@@ -1,0 +1,528 @@
+fileFormatVersion: 2
+guid: 908849fc89190e54197645a365cb3cb7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 933891035921044444
+    second: jefe_andar_spritesheet_0
+  - first:
+      213: -2644379517974998762
+    second: jefe_andar_spritesheet_1
+  - first:
+      213: 7673730975312412991
+    second: jefe_andar_spritesheet_2
+  - first:
+      213: 5509463699840782558
+    second: jefe_andar_spritesheet_3
+  - first:
+      213: 8240095338212944380
+    second: jefe_andar_spritesheet_4
+  - first:
+      213: 2513179943000645783
+    second: jefe_andar_spritesheet_5
+  - first:
+      213: 4687164119046176501
+    second: jefe_andar_spritesheet_6
+  - first:
+      213: 2209142657120284696
+    second: jefe_andar_spritesheet_7
+  - first:
+      213: -2266435631515403463
+    second: jefe_andar_spritesheet_8
+  - first:
+      213: 919045549279145064
+    second: jefe_andar_spritesheet_9
+  - first:
+      213: 8911954133365412221
+    second: jefe_andar_spritesheet_10
+  - first:
+      213: 4236916531365070091
+    second: jefe_andar_spritesheet_11
+  - first:
+      213: -2981477585694574344
+    second: jefe_andar_spritesheet_12
+  - first:
+      213: 7834461239308124706
+    second: jefe_andar_spritesheet_13
+  - first:
+      213: -3232978627648902338
+    second: jefe_andar_spritesheet_14
+  - first:
+      213: 7391712200629911867
+    second: jefe_andar_spritesheet_15
+  - first:
+      213: -4210584947964354377
+    second: jefe_andar_spritesheet_16
+  - first:
+      213: -2981491424646879285
+    second: jefe_andar_spritesheet_17
+  - first:
+      213: 7329376300238273718
+    second: jefe_andar_spritesheet_18
+  - first:
+      213: 7939805761165474591
+    second: jefe_andar_spritesheet_19
+  - first:
+      213: -3474550928179109135
+    second: jefe_andar_spritesheet_20
+  - first:
+      213: -483744230693428597
+    second: jefe_andar_spritesheet_21
+  - first:
+      213: -2684494165204966809
+    second: jefe_andar_spritesheet_22
+  - first:
+      213: 16241678955149716
+    second: jefe_andar_spritesheet_23
+  - first:
+      213: -7821324985350338167
+    second: jefe_andar_spritesheet_24
+  - first:
+      213: -2702565228961647837
+    second: jefe_andar_spritesheet_25
+  - first:
+      213: 5615826991633348378
+    second: jefe_andar_spritesheet_26
+  - first:
+      213: 1978311257234001475
+    second: jefe_andar_spritesheet_27
+  - first:
+      213: 5780685861507126027
+    second: jefe_andar_spritesheet_28
+  - first:
+      213: 3877110462352172712
+    second: jefe_andar_spritesheet_29
+  - first:
+      213: -6809302024594965577
+    second: jefe_andar_spritesheet_30
+  - first:
+      213: -4199023806381693414
+    second: jefe_andar_spritesheet_31
+  - first:
+      213: 5103753473273828332
+    second: jefe_andar_spritesheet_32
+  - first:
+      213: -9066991004020584499
+    second: jefe_andar_spritesheet_33
+  - first:
+      213: 6191984557439155556
+    second: jefe_andar_spritesheet_34
+  - first:
+      213: -4028506293122763342
+    second: jefe_andar_spritesheet_35
+  - first:
+      213: 1164996420781661402
+    second: jefe_andar_spritesheet_36
+  - first:
+      213: 4749791395566187726
+    second: jefe_andar_spritesheet_37
+  - first:
+      213: 5802015919631137873
+    second: jefe_andar_spritesheet_38
+  - first:
+      213: 3557091651089154130
+    second: jefe_andar_spritesheet_39
+  - first:
+      213: -268573197652795852
+    second: jefe_andar_spritesheet_40
+  - first:
+      213: 4080939069600561893
+    second: jefe_andar_spritesheet_41
+  - first:
+      213: 4996538247213945666
+    second: jefe_andar_spritesheet_42
+  - first:
+      213: 8609595208937375946
+    second: jefe_andar_spritesheet_43
+  - first:
+      213: 7223775256164781162
+    second: jefe_andar_spritesheet_44
+  - first:
+      213: -3507935673183133205
+    second: jefe_andar_spritesheet_45
+  - first:
+      213: 5489420126349298652
+    second: jefe_andar_spritesheet_46
+  - first:
+      213: 5975988929885937336
+    second: jefe_andar_spritesheet_47
+  - first:
+      213: -2646003468937530540
+    second: jefe_andar_spritesheet_48
+  - first:
+      213: 5074543250162441892
+    second: jefe_andar_spritesheet_49
+  - first:
+      213: -7699448073398823595
+    second: jefe_andar_spritesheet_50
+  - first:
+      213: -794728613906657172
+    second: jefe_andar_spritesheet_51
+  - first:
+      213: 3840701090013297517
+    second: jefe_andar_spritesheet_52
+  - first:
+      213: 8122954221497505117
+    second: jefe_andar_spritesheet_53
+  - first:
+      213: -527915839390903475
+    second: jefe_andar_spritesheet_54
+  - first:
+      213: 3447210393443669412
+    second: jefe_andar_spritesheet_55
+  - first:
+      213: 8674037501635783919
+    second: jefe_andar_spritesheet_56
+  - first:
+      213: 6049300531970354093
+    second: jefe_andar_spritesheet_57
+  - first:
+      213: -8016438181631964536
+    second: jefe_andar_spritesheet_58
+  - first:
+      213: 5834516240479631290
+    second: jefe_andar_spritesheet_59
+  - first:
+      213: -5429511494799699928
+    second: jefe_andar_spritesheet_60
+  - first:
+      213: -4752286159539044304
+    second: jefe_andar_spritesheet_61
+  - first:
+      213: 6420688082124241954
+    second: jefe_andar_spritesheet_62
+  - first:
+      213: 3100647431813406586
+    second: jefe_andar_spritesheet_63
+  - first:
+      213: 2282004337001075565
+    second: jefe_andar_spritesheet_64
+  - first:
+      213: -1070961221901850470
+    second: jefe_andar_spritesheet_65
+  - first:
+      213: 8651040073939873077
+    second: jefe_andar_spritesheet_66
+  - first:
+      213: -5956163913338709011
+    second: jefe_andar_spritesheet_67
+  - first:
+      213: 5409687003648960694
+    second: jefe_andar_spritesheet_68
+  - first:
+      213: -7907264507444534740
+    second: jefe_andar_spritesheet_69
+  - first:
+      213: 681118803480376124
+    second: jefe_andar_spritesheet_70
+  - first:
+      213: -8863313932693923021
+    second: jefe_andar_spritesheet_71
+  - first:
+      213: -6293287730884047320
+    second: jefe_andar_spritesheet_72
+  - first:
+      213: -5782528245209850525
+    second: jefe_andar_spritesheet_73
+  - first:
+      213: -6503821312323905062
+    second: jefe_andar_spritesheet_74
+  - first:
+      213: -2527747075221404620
+    second: jefe_andar_spritesheet_75
+  - first:
+      213: -7687022046124078752
+    second: jefe_andar_spritesheet_76
+  - first:
+      213: 5990437734279539019
+    second: jefe_andar_spritesheet_77
+  - first:
+      213: 2469943685283970665
+    second: jefe_andar_spritesheet_78
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jefe_andar_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1457
+        height: 1428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd3defef2f8d5fc00800000000000000
+      internalID: 933891035921044444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe_andar_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 0
+        width: 1457
+        height: 1428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61118c3c6d64d4bd0800000000000000
+      internalID: -2644379517974998762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe_andar_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 2914
+        y: 0
+        width: 1457
+        height: 1428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3188653aa19e7a60800000000000000
+      internalID: 7673730975312412991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe_andar_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 4371
+        y: 0
+        width: 1457
+        height: 1428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed05beb6b0c857c40800000000000000
+      internalID: 5509463699840782558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe_andar_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 5828
+        y: 0
+        width: 1457
+        height: 1428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf9e88d5d03ba5270800000000000000
+      internalID: 8240095338212944380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe_andar_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 7285
+        y: 0
+        width: 1457
+        height: 1428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790a03fb7db90e220800000000000000
+      internalID: 2513179943000645783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe_andar_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 8742
+        y: 0
+        width: 1457
+        height: 1428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fe34bfbee62c0140800000000000000
+      internalID: 4687164119046176501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      jefe_andar_spritesheet_0: 933891035921044444
+      jefe_andar_spritesheet_1: -2644379517974998762
+      jefe_andar_spritesheet_2: 7673730975312412991
+      jefe_andar_spritesheet_3: 5509463699840782558
+      jefe_andar_spritesheet_4: 8240095338212944380
+      jefe_andar_spritesheet_5: 2513179943000645783
+      jefe_andar_spritesheet_6: 4687164119046176501
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

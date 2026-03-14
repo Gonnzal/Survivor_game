@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 65d161200d0b2654e9a231bbc8ebea28
+guid: 95b5232d9f5e3364796c39ece78bc074
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5041516852439307416
-    second: muelle_piezas8_0
+      213: 812621766206576745
+    second: 0000-1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: muelle_piezas8_0
+      name: 0000-1_0
       rect:
         serializedVersion: 2
-        x: 765
-        y: 364
-        width: 187
-        height: 355
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8945acebdd017f540800000000000000
-      internalID: 5041516852439307416
+      spriteID: 9685e7fd033074b00800000000000000
+      internalID: 812621766206576745
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      muelle_piezas8_0: 5041516852439307416
+      0000-1_0: 812621766206576745
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

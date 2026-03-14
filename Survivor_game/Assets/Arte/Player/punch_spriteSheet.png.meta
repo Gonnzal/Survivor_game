@@ -1,22 +1,28 @@
 fileFormatVersion: 2
-guid: 508f3564d5ed511459da0f3976a754fd
+guid: d9d688f5df43f694ea6858498ec231a9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7181082413557747894
-    second: fenrir_bite_spritesheet_0
+      213: 1454565762500232256
+    second: punch_spriteSheet_0
   - first:
-      213: -5501865309206195131
-    second: fenrir_bite_spritesheet_1
+      213: -1467862591355899391
+    second: punch_spriteSheet_1
   - first:
-      213: 5287570745670841303
-    second: fenrir_bite_spritesheet_2
+      213: -7100296681444068682
+    second: punch_spriteSheet_2
   - first:
-      213: 8970202308195617733
-    second: fenrir_bite_spritesheet_3
+      213: -217800644201776306
+    second: punch_spriteSheet_3
   - first:
-      213: 3646472770948342326
-    second: fenrir_bite_spritesheet_4
+      213: 8146338844794451358
+    second: punch_spriteSheet_4
+  - first:
+      213: 1157446665454546454
+    second: punch_spriteSheet_5
+  - first:
+      213: -5882136707560875397
+    second: punch_spriteSheet_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,111 +131,155 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fenrir_bite_spritesheet_0
+      name: punch_spriteSheet_0
       rect:
         serializedVersion: 2
-        x: 109
-        y: 13
-        width: 545
-        height: 450
+        x: 21
+        y: 144
+        width: 291
+        height: 622
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a4fe515879ba75c90800000000000000
-      internalID: -7181082413557747894
+      spriteID: 0448548bad7af2410800000000000000
+      internalID: 1454565762500232256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fenrir_bite_spritesheet_1
+      name: punch_spriteSheet_1
       rect:
         serializedVersion: 2
-        x: 711
-        y: 15
-        width: 634
-        height: 418
+        x: 337
+        y: 144
+        width: 356
+        height: 622
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 54458b2c6a275a3b0800000000000000
-      internalID: -5501865309206195131
+      spriteID: 102b52f00ca11abe0800000000000000
+      internalID: -1467862591355899391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fenrir_bite_spritesheet_2
+      name: punch_spriteSheet_2
       rect:
         serializedVersion: 2
-        x: 1380
-        y: 15
-        width: 648
-        height: 400
+        x: 713
+        y: 447
+        width: 7
+        height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7d335741499316940800000000000000
-      internalID: 5287570745670841303
+      spriteID: 6b234a689cda67d90800000000000000
+      internalID: -7100296681444068682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fenrir_bite_spritesheet_3
+      name: punch_spriteSheet_3
       rect:
         serializedVersion: 2
-        x: 2123
-        y: 15
-        width: 596
-        height: 432
+        x: 718
+        y: 144
+        width: 408
+        height: 622
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5cb836f197f8c7c70800000000000000
-      internalID: 8970202308195617733
+      spriteID: e4b7082d7773afcf0800000000000000
+      internalID: -217800644201776306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fenrir_bite_spritesheet_4
+      name: punch_spriteSheet_4
       rect:
         serializedVersion: 2
-        x: 2840
-        y: 13
-        width: 546
-        height: 452
+        x: 1150
+        y: 144
+        width: 430
+        height: 622
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 632a2835aafda9230800000000000000
-      internalID: 3646472770948342326
+      spriteID: e9570f7a40c9d0170800000000000000
+      internalID: 8146338844794451358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: punch_spriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 438
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ee0ec1c93101010800000000000000
+      internalID: 1157446665454546454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: punch_spriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 144
+        width: 291
+        height: 622
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a5c8154d37e5ea0800000000000000
+      internalID: -5882136707560875397
       vertices: []
       indices: 
       edges: []
@@ -238,7 +288,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4ad03ea2ad097bc44a325221e7a89997
     internalID: 0
     vertices: []
     indices: 
@@ -248,11 +298,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fenrir_bite_spritesheet_0: -7181082413557747894
-      fenrir_bite_spritesheet_1: -5501865309206195131
-      fenrir_bite_spritesheet_2: 5287570745670841303
-      fenrir_bite_spritesheet_3: 8970202308195617733
-      fenrir_bite_spritesheet_4: 3646472770948342326
+      punch_spriteSheet_0: 1454565762500232256
+      punch_spriteSheet_1: -1467862591355899391
+      punch_spriteSheet_2: -7100296681444068682
+      punch_spriteSheet_3: -217800644201776306
+      punch_spriteSheet_4: 8146338844794451358
+      punch_spriteSheet_5: 1157446665454546454
+      punch_spriteSheet_6: -5882136707560875397
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

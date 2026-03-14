@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 65d161200d0b2654e9a231bbc8ebea28
+guid: 7e531b6a0cb78f844ae3a6119d2dd421
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5041516852439307416
-    second: muelle_piezas8_0
+      213: 3699609111625054685
+    second: Ola_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,10 +72,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
-    resizeAlgorithm: 1
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: muelle_piezas8_0
+      name: Ola_0
       rect:
         serializedVersion: 2
-        x: 765
-        y: 364
-        width: 187
-        height: 355
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8945acebdd017f540800000000000000
-      internalID: 5041516852439307416
+      spriteID: dd9b53ab2e6a75330800000000000000
+      internalID: 3699609111625054685
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      muelle_piezas8_0: 5041516852439307416
+      Ola_0: 3699609111625054685
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
