@@ -54,3 +54,13 @@ MonoBehaviour:
   win: {fileID: 0}
   credits: {fileID: 0}
   wave: {fileID: 0}
+  canvasGroup: {fileID: 0}
+  boss: {fileID: 1591257996324923709, guid: 13fc951e835cd71479e71d3e2602f06f, type: 3}
+  menusMusic: {fileID: 8300000, guid: 8990922b160af2a4e916e253156d4389, type: 3}
+  round1: {fileID: 8300000, guid: 0b11ecbdff251b04bb1eb145dd50c7fe, type: 3}
+  round2: {fileID: 8300000, guid: acb09f26ac17fce428a9667a210734bb, type: 3}
+  round3: {fileID: 8300000, guid: c7458f5da5f4a094080fb996693a2aae, type: 3}
+  round4: {fileID: 8300000, guid: 7671c345435de074ba654827db9e15fd, type: 3}
+  round5: {fileID: 8300000, guid: eba3099811f2fa04f9ecb3ab6d195464, type: 3}
+  round5Loop: {fileID: 8300000, guid: 4ed5be8c188b1b4479dc69733cff0ada, type: 3}
+  hambiente: {fileID: 8300000, guid: 958efced24e614d468d873291a2a7aa6, type: 3}

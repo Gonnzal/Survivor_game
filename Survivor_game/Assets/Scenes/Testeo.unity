@@ -476,6 +476,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1196687861}
     - target: {fileID: 1718903317189974013, guid: 0be7fec9793cb7e4abffb27fd5bcdff4, type: 3}
+      propertyPath: round1
+      value: 
+      objectReference: {fileID: 8300000, guid: 0b11ecbdff251b04bb1eb145dd50c7fe, type: 3}
+    - target: {fileID: 1718903317189974013, guid: 0be7fec9793cb7e4abffb27fd5bcdff4, type: 3}
+      propertyPath: round2
+      value: 
+      objectReference: {fileID: 8300000, guid: acb09f26ac17fce428a9667a210734bb, type: 3}
+    - target: {fileID: 1718903317189974013, guid: 0be7fec9793cb7e4abffb27fd5bcdff4, type: 3}
+      propertyPath: round3
+      value: 
+      objectReference: {fileID: 8300000, guid: c7458f5da5f4a094080fb996693a2aae, type: 3}
+    - target: {fileID: 1718903317189974013, guid: 0be7fec9793cb7e4abffb27fd5bcdff4, type: 3}
+      propertyPath: round4
+      value: 
+      objectReference: {fileID: 8300000, guid: 7671c345435de074ba654827db9e15fd, type: 3}
+    - target: {fileID: 1718903317189974013, guid: 0be7fec9793cb7e4abffb27fd5bcdff4, type: 3}
+      propertyPath: round5
+      value: 
+      objectReference: {fileID: 8300000, guid: eba3099811f2fa04f9ecb3ab6d195464, type: 3}
+    - target: {fileID: 1718903317189974013, guid: 0be7fec9793cb7e4abffb27fd5bcdff4, type: 3}
       propertyPath: credits
       value: 
       objectReference: {fileID: 146644325}
@@ -484,9 +504,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1298536244}
     - target: {fileID: 1718903317189974013, guid: 0be7fec9793cb7e4abffb27fd5bcdff4, type: 3}
+      propertyPath: hambiente
+      value: 
+      objectReference: {fileID: 8300000, guid: 958efced24e614d468d873291a2a7aa6, type: 3}
+    - target: {fileID: 1718903317189974013, guid: 0be7fec9793cb7e4abffb27fd5bcdff4, type: 3}
       propertyPath: gameCanvas
       value: 
       objectReference: {fileID: 664592967}
+    - target: {fileID: 1718903317189974013, guid: 0be7fec9793cb7e4abffb27fd5bcdff4, type: 3}
+      propertyPath: menusMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 8990922b160af2a4e916e253156d4389, type: 3}
+    - target: {fileID: 1718903317189974013, guid: 0be7fec9793cb7e4abffb27fd5bcdff4, type: 3}
+      propertyPath: round5Loop
+      value: 
+      objectReference: {fileID: 8300000, guid: 4ed5be8c188b1b4479dc69733cff0ada, type: 3}
     - target: {fileID: 1718903317189974013, guid: 0be7fec9793cb7e4abffb27fd5bcdff4, type: 3}
       propertyPath: canvasGroup
       value: 
