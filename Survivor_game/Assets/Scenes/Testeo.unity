@@ -298,6 +298,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4051034933255720899, guid: e10cf25300f577747ac504162dbe25fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 676990133}
+    - target: {fileID: 4051034933255720899, guid: e10cf25300f577747ac504162dbe25fb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MainMenu
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1167,6 +1175,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6592604818122484487, guid: 89d42dabf92a7484a97d7b1fe6ba1095, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 676990133}
+    - target: {fileID: 6592604818122484487, guid: 89d42dabf92a7484a97d7b1fe6ba1095, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MainMenu
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1978,6 +1994,46 @@ PrefabInstance:
     - target: {fileID: 3537589229315952559, guid: a62e4fd0683f56f4fba1f180268a086a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4109012759161678198, guid: a62e4fd0683f56f4fba1f180268a086a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4109012759161678198, guid: a62e4fd0683f56f4fba1f180268a086a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4109012759161678198, guid: a62e4fd0683f56f4fba1f180268a086a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 676990133}
+    - target: {fileID: 4109012759161678198, guid: a62e4fd0683f56f4fba1f180268a086a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4109012759161678198, guid: a62e4fd0683f56f4fba1f180268a086a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Credits
+      objectReference: {fileID: 0}
+    - target: {fileID: 4109012759161678198, guid: a62e4fd0683f56f4fba1f180268a086a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Credits
+      objectReference: {fileID: 0}
+    - target: {fileID: 4109012759161678198, guid: a62e4fd0683f56f4fba1f180268a086a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Rounds, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4109012759161678198, guid: a62e4fd0683f56f4fba1f180268a086a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910722828618666482, guid: a62e4fd0683f56f4fba1f180268a086a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 676990133}
+    - target: {fileID: 4910722828618666482, guid: a62e4fd0683f56f4fba1f180268a086a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Exit
       objectReference: {fileID: 0}
     - target: {fileID: 6321780647088408710, guid: a62e4fd0683f56f4fba1f180268a086a, type: 3}
       propertyPath: m_Name
