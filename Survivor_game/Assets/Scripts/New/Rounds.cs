@@ -16,6 +16,7 @@ public class Rounds : MonoBehaviour
     [SerializeField] GameObject wave;
     [SerializeField] CanvasGroup canvasGroup;
     [SerializeField] GameObject boss;
+    [SerializeField] Canvas mecanicas;
 
     int currentRound;
     float roundProgress;
@@ -119,6 +120,7 @@ public class Rounds : MonoBehaviour
         credits.enabled = false;
         win.enabled = false;
         death.enabled = false;
+        mecanicas.enabled = false;
         minuteCount = 0;
         second2Count = 0;
         second1Count = 0;
@@ -182,5 +184,11 @@ public class Rounds : MonoBehaviour
     public void Exit()
     {
         Application.Quit();
+    }
+
+    public void Mecanicas()
+    {
+        mainMenu.enabled = false;
+        mecanicas.enabled = true;
     }
 }
