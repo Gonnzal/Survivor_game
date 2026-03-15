@@ -394,6 +394,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 490702541}
     - target: {fileID: 1718903317189974013, guid: 0be7fec9793cb7e4abffb27fd5bcdff4, type: 3}
+      propertyPath: boss
+      value: 
+      objectReference: {fileID: 1591257996324923709, guid: 13fc951e835cd71479e71d3e2602f06f, type: 3}
+    - target: {fileID: 1718903317189974013, guid: 0be7fec9793cb7e4abffb27fd5bcdff4, type: 3}
       propertyPath: wave
       value: 
       objectReference: {fileID: 1801075911}

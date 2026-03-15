@@ -15,6 +15,7 @@ public class Rounds : MonoBehaviour
     [SerializeField] Canvas credits;
     [SerializeField] GameObject wave;
     [SerializeField] CanvasGroup canvasGroup;
+    [SerializeField] GameObject boss;
     int currentRound;
     float roundProgress;
     int minuteCount;
@@ -71,7 +72,7 @@ public class Rounds : MonoBehaviour
     
     void BossRound()
     {
-        
+        Instantiate(boss);
     }
 
     public void MainMenu()
