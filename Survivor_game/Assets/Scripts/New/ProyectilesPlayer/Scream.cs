@@ -4,7 +4,7 @@ public class Scream : MonoBehaviour
 {
     private Rigidbody2D rb2D;
     private Animator animator;
-    public int damage;
+    public int damage = 20;
 
     public AudioClip[] grito;
 

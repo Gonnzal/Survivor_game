@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc183e26e208384282c06ac6904dc98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
+  damage: 10
   axe:
   - {fileID: 8300000, guid: 1ea7655707bf9e54aa4bbdcc59a05511, type: 3}
   - {fileID: 8300000, guid: 8c83fc873cde0ac4e96bddedacf6563a, type: 3}

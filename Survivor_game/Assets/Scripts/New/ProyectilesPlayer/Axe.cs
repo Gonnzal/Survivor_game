@@ -5,7 +5,7 @@ public class Axe : MonoBehaviour
     private Rigidbody2D rb2D;
     private float lifeTime = 3f;
     private float speed = 20f;
-    public int damage;
+    public int damage = 10;
 
     public AudioClip[] axe;
 

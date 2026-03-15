@@ -5,7 +5,7 @@ public class Punch : MonoBehaviour
     private Rigidbody2D rb2D;
     private float lifeTime = 0.5f;
     private float speed = 30f;
-    public int damage;
+    public int damage = 5;
 
     public AudioClip[] punch;
 
