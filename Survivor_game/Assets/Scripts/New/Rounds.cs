@@ -49,7 +49,7 @@ public class Rounds : MonoBehaviour
         currentRound = 0;
         MainMenu();
         vidaPlayer = GameObject.Find("Player").GetComponent<playerController>();
-        vidaMuro = GameObject.Find("Tower").GetComponent<Tower>();
+        vidaMuro = GameObject.Find("PUERTA MADERA_0").GetComponent<Tower>();
         vidaplayer.text = "Vida del jugador: " + vidaPlayer.health + " / 100";
         vidamuro.text = "Vida de la puerta: " + vidaMuro.health + " / 100";
     }
@@ -65,7 +65,7 @@ public class Rounds : MonoBehaviour
             if (second1Count == 6) { minuteCount++; second1Count = 0; second2Count = 0; }
             timeCounter.text = minuteCount + ":" + second1Count + second2Count;
             vidaplayer.text = "Vida del jugador: " + vidaPlayer.health + " / 100";
-            vidamuro.text = "Vida de la puerta: " + vidaMuro.health + " / 100";
+            vidamuro.text = "Vida de la puerta: " + vidaMuro.health + " / 200";
         }
 
         // Solo avanza automaticamente si NO es el round final (Round 5 es indefinido)
