@@ -46,6 +46,15 @@ public class EnemyAI : MonoBehaviour
         {
             rb2D.linearVelocity = Vector2.zero;
         }
+
+        if(rb2D.linearVelocityX < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+        if(rb2D.linearVelocityX > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
     }
 
     public void ReciveDanio(int danio)

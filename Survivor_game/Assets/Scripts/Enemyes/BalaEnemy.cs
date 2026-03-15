@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -11,6 +12,11 @@ public class BalaEnemy : MonoBehaviour
     void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
+    }
+
+    void Start()
+    {
+       StartCoroutine(FlipBala());
     }
 
     void Update()
@@ -48,6 +54,22 @@ public class BalaEnemy : MonoBehaviour
         if(other.gameObject.TryGetComponent<playerController>(out playerController obj))
         {
             obj.TakeDamage(damage);
+        }
+    }
+
+    IEnumerator FlipBala()
+    {
+        for (int i = 0; i < 2; i++)
+        {
+            yield return null;
+        }
+        if(rb2D.linearVelocityX < 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        if(rb2D.linearVelocityX > 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
         }
     }
 }

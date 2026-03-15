@@ -8,6 +8,7 @@ public class BoosAI : EnemyAI
     public GameObject balaPrefab;
     private float shootCooldown = 3f;
     private float shootTimer = 0f;
+    float distanceX;
 
     protected override void Start()
     {
@@ -29,6 +30,15 @@ public class BoosAI : EnemyAI
     {
         base.Update();
         EnemigoDisapara();
+        distanceX = transform.position.x - targets[0].transform.position.x;
+        if(distanceX > 0)
+        {
+            this.transform.localScale = new Vector3(-1, 1, 1);
+        }
+        if(distanceX < 0)
+        {
+            this.transform.localScale = new Vector3(1, 1, 1);
+        }
     }
 
     void EnemigoDisapara()
