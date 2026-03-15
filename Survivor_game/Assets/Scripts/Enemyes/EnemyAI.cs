@@ -9,7 +9,7 @@ public class EnemyAI : MonoBehaviour
     public Transform objetivoReal;
     public float vida;
     protected float vidaMax;
-    protected float velocidad;
+    [SerializeField]protected float velocidad;
     public float distanciaJugador;
     protected int danio;
     protected Animator animator;
@@ -61,8 +61,6 @@ public class EnemyAI : MonoBehaviour
     {
         if (vida <= 0)
         {
-            danio = 0;
-            velocidad = 0;
             //animator.SetTrigger("Dead");ç
             this.gameObject.SetActive(false);
             vida = vidaMax;
