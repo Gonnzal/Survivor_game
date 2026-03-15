@@ -199,6 +199,26 @@ PrefabInstance:
       propertyPath: 'recibeDanio.Array.data[3]'
       value: 
       objectReference: {fileID: 8300000, guid: 52f8445e89ae8b24e9f61b9293049a5d, type: 3}
+    - target: {fileID: 4373312391287409071, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
+      propertyPath: grito.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373312391287409071, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
+      propertyPath: 'grito.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: e3f42d912db89df46a1a29500c766c85, type: 3}
+    - target: {fileID: 4373312391287409071, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
+      propertyPath: 'grito.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: adfa65be1d239e5488cf564bee0ccbea, type: 3}
+    - target: {fileID: 4373312391287409071, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
+      propertyPath: 'grito.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 3bc4a59765e55654a8c00d7111ec0978, type: 3}
+    - target: {fileID: 4373312391287409071, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
+      propertyPath: 'grito.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 7a0223b2977e96749b4dd43cd7094084, type: 3}
     - target: {fileID: 6041852569815453814, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
       propertyPath: m_Name
       value: Player (1)
