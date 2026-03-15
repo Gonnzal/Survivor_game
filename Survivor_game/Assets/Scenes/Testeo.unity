@@ -520,6 +520,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 4ed5be8c188b1b4479dc69733cff0ada, type: 3}
     - target: {fileID: 1718903317189974013, guid: 0be7fec9793cb7e4abffb27fd5bcdff4, type: 3}
+      propertyPath: roundCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1718903317189974013, guid: 0be7fec9793cb7e4abffb27fd5bcdff4, type: 3}
       propertyPath: canvasGroup
       value: 
       objectReference: {fileID: 1079376449}

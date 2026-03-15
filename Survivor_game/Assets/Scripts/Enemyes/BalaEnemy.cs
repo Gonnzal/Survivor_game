@@ -22,6 +22,14 @@ public class BalaEnemy : MonoBehaviour
     void Update()
     {
         LifeTime();
+        if(rb2D.linearVelocityX < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+        if(rb2D.linearVelocityX > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
     }
 
     void LifeTime()
