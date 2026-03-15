@@ -192,6 +192,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6429666284038738533, guid: 253b528dfad824e48b0431489d6abe27, type: 3}
   m_PrefabInstance: {fileID: 23868496}
   m_PrefabAsset: {fileID: 0}
+--- !u!223 &34131692 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 5069694252243717568, guid: a8221f73995916a469fd6f65d7f8edbe, type: 3}
+  m_PrefabInstance: {fileID: 2686705954133837413}
+  m_PrefabAsset: {fileID: 0}
 --- !u!82 &78222322 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 4418256977145942446, guid: 1b55b0457abb0224ea58e1efc73a9f0c, type: 3}
@@ -507,6 +512,10 @@ PrefabInstance:
       propertyPath: hambiente
       value: 
       objectReference: {fileID: 8300000, guid: 958efced24e614d468d873291a2a7aa6, type: 3}
+    - target: {fileID: 1718903317189974013, guid: 0be7fec9793cb7e4abffb27fd5bcdff4, type: 3}
+      propertyPath: mecanicas
+      value: 
+      objectReference: {fileID: 34131692}
     - target: {fileID: 1718903317189974013, guid: 0be7fec9793cb7e4abffb27fd5bcdff4, type: 3}
       propertyPath: gameCanvas
       value: 
@@ -2432,10 +2441,6 @@ PrefabInstance:
     - target: {fileID: 2407040595703013251, guid: a8221f73995916a469fd6f65d7f8edbe, type: 3}
       propertyPath: m_Name
       value: "Mec\xE1nicas"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2407040595703013251, guid: a8221f73995916a469fd6f65d7f8edbe, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3529700025213362001, guid: a8221f73995916a469fd6f65d7f8edbe, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
