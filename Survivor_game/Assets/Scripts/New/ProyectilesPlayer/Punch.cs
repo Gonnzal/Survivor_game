@@ -7,6 +7,8 @@ public class Punch : MonoBehaviour
     private float speed = 5f;
     public int damage;
 
+    public AudioClip[] punch;
+
     void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -30,6 +32,7 @@ public class Punch : MonoBehaviour
     public void DispararPunch(Vector2 origen, Vector2 destino)
     {
         gameObject.SetActive(true);
+        SoundManager.instance.PlaySFX(punch[Random.Range(0, punch.Length - 1)]);
 
         transform.position = origen;
         lifeTime = 3f;

@@ -7,6 +7,8 @@ public class Axe : MonoBehaviour
     private float speed = 5f;
     public int damage;
 
+    public AudioClip[] axe;
+
     void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -45,14 +47,17 @@ public class Axe : MonoBehaviour
     {
         if (other.gameObject.TryGetComponent<AmeleAI>(out AmeleAI enemy))
         {
+            SoundManager.instance.PlaySFX(axe[Random.Range(0, axe.Length - 1)]);
             enemy.ReciveDanio(damage);
         }
         else if(other.gameObject.TryGetComponent<DistanceAI>(out DistanceAI enemy2))
         {
+            SoundManager.instance.PlaySFX(axe[Random.Range(0, axe.Length - 1)]);
             enemy2.ReciveDanio(damage);
         }
         else if(other.gameObject.TryGetComponent<BoosAI>(out BoosAI enemy3))
         {
+            SoundManager.instance.PlaySFX(axe[Random.Range(0, axe.Length - 1)]);
             enemy3.ReciveDanio(damage);
         }
     }
