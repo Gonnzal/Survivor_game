@@ -328,7 +328,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 613, y: -297}
+  m_AnchoredPosition: {x: 379, y: -206}
   m_SizeDelta: {x: 294.3193, y: 30.9225}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &96057336
@@ -1347,7 +1347,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 4ed5be8c188b1b4479dc69733cff0ada, type: 3}
     - target: {fileID: 1718903317189974013, guid: 0be7fec9793cb7e4abffb27fd5bcdff4, type: 3}
       propertyPath: roundCount
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1718903317189974013, guid: 0be7fec9793cb7e4abffb27fd5bcdff4, type: 3}
       propertyPath: vidaplayer
@@ -1426,6 +1426,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 676990133}
+    - target: {fileID: 6005392478868421181, guid: 65dbed48b04c0db4d8c8678dcd15a9fe, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 523
+      objectReference: {fileID: 0}
+    - target: {fileID: 6005392478868421181, guid: 65dbed48b04c0db4d8c8678dcd15a9fe, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -308
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043037520595051225, guid: 65dbed48b04c0db4d8c8678dcd15a9fe, type: 3}
+      propertyPath: m_text
+      value: Odei "Tardeli" Llanos
+      objectReference: {fileID: 0}
     - target: {fileID: 7219611821030566436, guid: 65dbed48b04c0db4d8c8678dcd15a9fe, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1505,6 +1517,10 @@ PrefabInstance:
     - target: {fileID: 7219611821030566436, guid: 65dbed48b04c0db4d8c8678dcd15a9fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335086475415762975, guid: 65dbed48b04c0db4d8c8678dcd15a9fe, type: 3}
+      propertyPath: m_text
+      value: Odei "Tardeli" Llanos
       objectReference: {fileID: 0}
     - target: {fileID: 9081430722936372364, guid: 65dbed48b04c0db4d8c8678dcd15a9fe, type: 3}
       propertyPath: m_Name

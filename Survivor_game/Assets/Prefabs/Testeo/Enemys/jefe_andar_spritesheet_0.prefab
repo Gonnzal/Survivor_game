@@ -191,7 +191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targets: []
   objetivoReal: {fileID: 0}
-  vida: 100
+  vida: 500
   velocidad: 5
   distanciaJugador: 0
   poolBalas: []

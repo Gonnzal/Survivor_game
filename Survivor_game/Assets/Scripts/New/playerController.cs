@@ -147,7 +147,10 @@ public class playerController : MonoBehaviour
 
     public void ReceiveDamage(int damage)
     {
-        SoundManager.instance.PlaySFX(recibeDanio[Random.Range(0, recibeDanio.Length - 1)]);
+        if(damage != 0)
+        {
+            SoundManager.instance.PlaySFX(recibeDanio[Random.Range(0, recibeDanio.Length - 1)]);
+        }
         health -= damage;
         if(health <= 0)
         {
