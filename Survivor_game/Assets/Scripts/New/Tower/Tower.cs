@@ -7,6 +7,7 @@ public class Tower : MonoBehaviour
 
     [SerializeField] private float maxHealth;
     private float health;
+    Rounds rondas;
 
     private void Awake()
     {
@@ -17,6 +18,7 @@ public class Tower : MonoBehaviour
     void Start()
     {
         health = maxHealth;
+        rondas = GameObject.Find("canvasManager").GetComponent<Rounds>();
     }
 
     // Update is called once per frame
@@ -29,7 +31,7 @@ public class Tower : MonoBehaviour
     {
         if (health <= 0)
         {
-            // menu de derrota
+            rondas.DeathCanvas();
         }
     }
 
