@@ -1,6 +1,6 @@
+// Rounds.cs
 using UnityEngine;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 public class Rounds : MonoBehaviour
 {
@@ -16,52 +16,85 @@ public class Rounds : MonoBehaviour
     [SerializeField] GameObject wave;
     [SerializeField] CanvasGroup canvasGroup;
     [SerializeField] GameObject boss;
+
     int currentRound;
     float roundProgress;
     int minuteCount;
     int second2Count;
     int second1Count;
 
+    public AudioClip menusMusic;
+    public AudioClip round1;
+    public AudioClip round2;
+    public AudioClip round3;
+    public AudioClip round4;
+    public AudioClip round5;
+    public AudioClip round5Loop;
+
+    public AudioClip hambiente;
+
     void Awake()
     {
         DontDestroyOnLoad(this);
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
+        SoundManager.instance.PlayMusic(menusMusic);
         currentRound = 0;
         MainMenu();
     }
 
-    // Update is called once per frame
     void Update()
     {
         roundProgress += Time.deltaTime;
-        if(roundProgress >= 1)
+        if (roundProgress >= 1)
         {
             second2Count++;
             roundProgress = 0;
-            if(second2Count == 10)
-            {
-                second1Count++;
-                second2Count = 0;
-            }
-            if(second1Count == 6)
-            {
-                minuteCount++;
-                second1Count = 0;
-                second2Count = 0;
-            }
-            timeCounter.text = minuteCount.ToString() + ":" + second1Count.ToString() + second2Count.ToString();
+            if (second2Count == 10) { second1Count++; second2Count = 0; }
+            if (second1Count == 6) { minuteCount++; second1Count = 0; second2Count = 0; }
+            timeCounter.text = minuteCount + ":" + second1Count + second2Count;
         }
-        if(minuteCount == roundDuration && currentRound != roundCount)
+
+        // Solo avanza automaticamente si NO es el round final (Round 5 es indefinido)
+        if (minuteCount >= roundDuration && currentRound != roundCount && currentRound < roundCount)
         {
             FinishRound();
         }
     }
 
+    // Devuelve el clip de musica segun el round
+    AudioClip MusicForRound(int round)
+    {
+        return round switch
+        {
+            1 => round1,
+            2 => round2,
+            3 => round3,
+            4 => round4,
+            5 => round5,
+            _ => menusMusic
+        };
+    }
+
+    void PlayRoundMusic(int round)
+    {
+        if (round == roundCount) // Round 5
+        {
+            SoundManager.instance.PlayMusicThenLoop(round5, round5Loop);
+        }
+        else
+        {
+            SoundManager.instance.PlayMusic(MusicForRound(round), loop: false);
+        }
+    }
+
     void FinishRound()
     {
+        SoundManager.instance.StopMusic();
+        // El ambiente lo dejamos sonar
+
         gameCanvas.enabled = false;
         canvasBetweenRounds.enabled = true;
         wave.SetActive(true);
@@ -69,7 +102,7 @@ public class Rounds : MonoBehaviour
         second2Count = 0;
         second1Count = 0;
     }
-    
+
     void BossRound()
     {
         Instantiate(boss);
@@ -77,6 +110,9 @@ public class Rounds : MonoBehaviour
 
     public void MainMenu()
     {
+        SoundManager.instance.PlayMusic(menusMusic);
+        SoundManager.instance.StopHambient();
+
         mainMenu.enabled = true;
         gameCanvas.enabled = false;
         canvasBetweenRounds.enabled = false;
@@ -98,34 +134,43 @@ public class Rounds : MonoBehaviour
     public void StartRound()
     {
         Time.timeScale = 1;
-        timeCounter.text = minuteCount.ToString() + ":" + second1Count.ToString() + second2Count.ToString();
+        currentRound++;
+
+        PlayRoundMusic(currentRound);
+
+        // Arranca el ambiente solo al empezar el juego
+        if (currentRound == 1)
+            SoundManager.instance.PlayHambient(hambiente);
+
+        timeCounter.text = minuteCount + ":" + second1Count + second2Count;
         canvasGroup.alpha = 1;
         canvasGroup.interactable = true;
         gameCanvas.enabled = true;
         mainMenu.enabled = false;
         canvasBetweenRounds.enabled = false;
-        currentRound++;
-        if(currentRound == roundCount)
-        {
+
+        if (currentRound == roundCount)
             BossRound();
-        }
     }
+
     public void DeathCanvas()
     {
+        SoundManager.instance.StopMusic();
+        SoundManager.instance.StopHambient();
+
         gameCanvas.enabled = false;
         death.enabled = true;
         Time.timeScale = 0;
     }
+
     public void FinishCanvas()
     {
+        SoundManager.instance.StopMusic();
+        SoundManager.instance.StopHambient();
+
         gameCanvas.enabled = false;
         win.enabled = true;
         wave.SetActive(true);
-    }
-
-    public void Exit()
-    {
-        Application.Quit();
     }
 
     public void Upgrade()
@@ -133,5 +178,9 @@ public class Rounds : MonoBehaviour
         canvasGroup.alpha = 0.5f;
         canvasGroup.interactable = false;
     }
-}
 
+    public void Exit()
+    {
+        Application.Quit();
+    }
+}
