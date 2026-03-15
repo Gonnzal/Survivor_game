@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UIElements;
 
 public class DistanceAI : EnemyAI
 {
@@ -8,6 +9,11 @@ public class DistanceAI : EnemyAI
     public GameObject balaPrefab;
     private float shootCooldown = 3f;
     private float shootTimer = 0f;
+
+    public AudioClip[] atack;
+    public AudioClip[] aleteo;
+
+    float soundCooldown;
 
     protected override void Start()
     {
@@ -24,6 +30,7 @@ public class DistanceAI : EnemyAI
     {
         base.Update();
         EnemigoDisapara();
+        EmitirSonido();
     }
 
     void EnemigoDisapara()
@@ -33,6 +40,7 @@ public class DistanceAI : EnemyAI
         Vector2 diferencia = (Vector2)objetivoReal.position - rb2D.position;
         if (shootTimer <= 0f && diferencia.magnitude <= distanciaJugador)
         {
+            SoundManager.instance.PlaySFX(atack[Random.Range(0, atack.Length -1)]);
             GameObject dispBala = ActivarBala();
             BalaEnemy balaScript = dispBala.GetComponent<BalaEnemy>();
             balaScript.Disparar(this.transform.position, objetivoReal.position);
@@ -64,5 +72,16 @@ public class DistanceAI : EnemyAI
         AddBalaToPool(1);
         poolBalas[poolBalas.Count - 1].SetActive(true);
         return poolBalas[poolBalas.Count - 1];
+    }
+
+    void EmitirSonido()
+    {
+        soundCooldown += Time.deltaTime;
+
+        if (soundCooldown > 7)
+        {
+            SoundManager.instance.PlaySFX(aleteo[Random.Range(0, aleteo.Length - 1)]);
+            soundCooldown = 0;
+        }
     }
 }
