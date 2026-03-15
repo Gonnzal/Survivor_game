@@ -63,6 +63,10 @@ public class BalaEnemy : MonoBehaviour
         {
             obj.TakeDamage(damage);
         }
+        if(other.gameObject.TryGetComponent<Tower>(out Tower obj2))
+        {
+            obj2.ReceiveDamage(damage);
+        }
     }
 
     IEnumerator FlipBala()
