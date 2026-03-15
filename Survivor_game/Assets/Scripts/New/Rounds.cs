@@ -1,6 +1,7 @@
 // Rounds.cs
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Rounds : MonoBehaviour
 {
@@ -37,6 +38,7 @@ public class Rounds : MonoBehaviour
     Tower vidaMuro;
     [SerializeField] TMP_Text vidaplayer;
     [SerializeField] TMP_Text vidamuro;
+    bool bossDead;
 
     void Awake()
     {
@@ -47,11 +49,18 @@ public class Rounds : MonoBehaviour
     {
         SoundManager.instance.PlayMusic(menusMusic);
         currentRound = 0;
-        MainMenu();
         vidaPlayer = GameObject.Find("Player").GetComponent<playerController>();
         vidaMuro = GameObject.Find("PUERTA MADERA_0").GetComponent<Tower>();
         vidaplayer.text = "Vida del jugador: " + vidaPlayer.health + " / 100";
         vidamuro.text = "Vida de la puerta: " + vidaMuro.health + " / 100";
+        mainMenu.enabled = true;
+        gameCanvas.enabled = false;
+        canvasBetweenRounds.enabled = false;
+        credits.enabled = false;
+        win.enabled = false;
+        death.enabled = false;
+        mecanicas.enabled = false;
+        bossDead = true;
     }
 
     void Update()
@@ -121,16 +130,9 @@ public class Rounds : MonoBehaviour
 
     public void MainMenu()
     {
+        SceneManager.LoadScene("Testeo");
         SoundManager.instance.PlayMusic(menusMusic);
         SoundManager.instance.StopHambient();
-
-        mainMenu.enabled = true;
-        gameCanvas.enabled = false;
-        canvasBetweenRounds.enabled = false;
-        credits.enabled = false;
-        win.enabled = false;
-        death.enabled = false;
-        mecanicas.enabled = false;
         minuteCount = 0;
         second2Count = 0;
         second1Count = 0;
@@ -169,17 +171,16 @@ public class Rounds : MonoBehaviour
     {
         SoundManager.instance.StopMusic();
         SoundManager.instance.StopHambient();
-
+        bossDead = false;
+        Time.timeScale = 0;
         gameCanvas.enabled = false;
         death.enabled = true;
-        Time.timeScale = 0;
     }
 
     public void FinishCanvas()
     {
         SoundManager.instance.StopMusic();
         SoundManager.instance.StopHambient();
-
         gameCanvas.enabled = false;
         win.enabled = true;
         wave.SetActive(true);
