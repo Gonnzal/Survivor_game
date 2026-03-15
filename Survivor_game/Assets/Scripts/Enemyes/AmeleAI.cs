@@ -29,7 +29,6 @@ public class AmeleAI : EnemyAI
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Soy tontito");
         animator.SetTrigger("Bite");
         SoundManager.instance.PlaySFX(atack[Random.Range(0, atack.Length - 1)]);
         if (collision.gameObject.TryGetComponent<playerController>(out playerController obj))
