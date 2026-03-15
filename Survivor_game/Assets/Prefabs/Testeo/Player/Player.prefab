@@ -153,6 +153,14 @@ MonoBehaviour:
     m_Bits: 8
   detectionRadius: 20
   canvas: {fileID: 0}
+  recibeDanio:
+  - {fileID: 8300000, guid: ba3e2c0d4c1ad6d41b8207db2be044c6, type: 3}
+  - {fileID: 8300000, guid: 63a6e588978dd824c9c5fb9262f2e494, type: 3}
+  - {fileID: 8300000, guid: 90d07ec8f16e0934bbe0e15bd21db62a, type: 3}
+  - {fileID: 8300000, guid: 52f8445e89ae8b24e9f61b9293049a5d, type: 3}
+  move:
+  - {fileID: 8300000, guid: e083b6035c7859d4bab7462b8fab2336, type: 3}
+  - {fileID: 8300000, guid: 24013936f3c8c6046b0839094a42a23c, type: 3}
 --- !u!50 &7638608130879786602
 Rigidbody2D:
   serializedVersion: 5
@@ -392,6 +400,38 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: cd536c79b6e9a944889d63a2f09f5d09, type: 3}
+    - target: {fileID: 3579741520627640394, guid: d9943791e0965ed47b3412e875d632df, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579741520627640394, guid: d9943791e0965ed47b3412e875d632df, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579741520627640394, guid: d9943791e0965ed47b3412e875d632df, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515395785016695705, guid: d9943791e0965ed47b3412e875d632df, type: 3}
+      propertyPath: grito.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515395785016695705, guid: d9943791e0965ed47b3412e875d632df, type: 3}
+      propertyPath: 'grito.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: e3f42d912db89df46a1a29500c766c85, type: 3}
+    - target: {fileID: 4515395785016695705, guid: d9943791e0965ed47b3412e875d632df, type: 3}
+      propertyPath: 'grito.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: adfa65be1d239e5488cf564bee0ccbea, type: 3}
+    - target: {fileID: 4515395785016695705, guid: d9943791e0965ed47b3412e875d632df, type: 3}
+      propertyPath: 'grito.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 3bc4a59765e55654a8c00d7111ec0978, type: 3}
+    - target: {fileID: 4515395785016695705, guid: d9943791e0965ed47b3412e875d632df, type: 3}
+      propertyPath: 'grito.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 7a0223b2977e96749b4dd43cd7094084, type: 3}
     - target: {fileID: 6117809061748256296, guid: d9943791e0965ed47b3412e875d632df, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -493,5 +533,5 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.37, y: 0}
   m_Radius: 4.65
