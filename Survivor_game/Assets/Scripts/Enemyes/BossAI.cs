@@ -16,7 +16,6 @@ public class BoosAI : EnemyAI
         danio = 5;
         distanciaJugador = 20f;
 
-        targets.Add(Tower.instance.transform);
         targets.Add(playerController.instance.transform);
         vida = vidaMax;
         if (animator == null) { animator = GetComponent<Animator>(); }

@@ -92,10 +92,12 @@ public class playerController : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             targertPosition += -transform.right * speed * Time.deltaTime;
+            transform.localScale = new Vector3(-1, 1, 1);
         }
         if (Input.GetKey(KeyCode.D))
         {
             targertPosition += transform.right * speed * Time.deltaTime;
+            transform.localScale = new Vector3(1, 1, 1);
         }
         rb.MovePosition(transform.position + targertPosition);
     }
