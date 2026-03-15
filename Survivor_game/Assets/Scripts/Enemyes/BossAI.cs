@@ -68,7 +68,6 @@ public class BoosAI : EnemyAI
             GameObject bala = Instantiate(balaPrefab);
             bala.gameObject.SetActive(false);
             poolBalas.Add(bala);
-            bala.transform.parent = this.transform;
         }
     }
 
