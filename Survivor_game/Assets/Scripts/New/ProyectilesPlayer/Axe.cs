@@ -51,5 +51,9 @@ public class Axe : MonoBehaviour
         {
             enemy2.ReciveDanio(damage);
         }
+        else if(other.gameObject.TryGetComponent<BoosAI>(out BoosAI enemy3))
+        {
+            enemy3.ReciveDanio(damage);
+        }
     }
 }
