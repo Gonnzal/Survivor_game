@@ -77,12 +77,16 @@ public class Rounds : MonoBehaviour
 
     public void MainMenu()
     {
+        Time.timeScale = 0;
         mainMenu.enabled = true;
         gameCanvas.enabled = false;
         canvasBetweenRounds.enabled = false;
         credits.enabled = false;
         win.enabled = false;
         death.enabled = false;
+        minuteCount = 0;
+        second2Count = 0;
+        second1Count = 0;
     }
 
     public void Credits()
@@ -93,10 +97,9 @@ public class Rounds : MonoBehaviour
 
     public void StartRound()
     {
+        Time.timeScale = 1;
         canvasGroup.alpha = 1;
         canvasGroup.interactable = true;
-        wave.SetActive(true);
-        Time.timeScale = 1;
         gameCanvas.enabled = true;
         mainMenu.enabled = false;
         canvasBetweenRounds.enabled = false;
@@ -117,7 +120,6 @@ public class Rounds : MonoBehaviour
         gameCanvas.enabled = false;
         win.enabled = true;
         wave.SetActive(true);
-        Time.timeScale = 0;
     }
 
     public void Exit()

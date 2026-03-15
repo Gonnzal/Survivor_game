@@ -21,6 +21,7 @@ public class Ola : MonoBehaviour
 
     void DesactiveOla()
     {
+        Time.timeScale = 0;
         this.gameObject.SetActive(false);
     }
 }
