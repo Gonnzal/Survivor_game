@@ -48,8 +48,10 @@ public class Rounds : MonoBehaviour
         SoundManager.instance.PlayMusic(menusMusic);
         currentRound = 0;
         MainMenu();
-        vidaPlayer = GameObject.Find("").GetComponent<playerController>();
-        vidaMuro = GameObject.Find("").GetComponent<Tower>();
+        vidaPlayer = GameObject.Find("Player").GetComponent<playerController>();
+        vidaMuro = GameObject.Find("Tower").GetComponent<Tower>();
+        vidaplayer.text = "Vida del jugador: " + vidaPlayer.health + " / 100";
+        vidamuro.text = "Vida de la puerta: " + vidaMuro.health + " / 100";
     }
 
     void Update()
@@ -62,6 +64,8 @@ public class Rounds : MonoBehaviour
             if (second2Count == 10) { second1Count++; second2Count = 0; }
             if (second1Count == 6) { minuteCount++; second1Count = 0; second2Count = 0; }
             timeCounter.text = minuteCount + ":" + second1Count + second2Count;
+            vidaplayer.text = "Vida del jugador: " + vidaPlayer.health + " / 100";
+            vidamuro.text = "Vida de la puerta: " + vidaMuro.health + " / 100";
         }
 
         // Solo avanza automaticamente si NO es el round final (Round 5 es indefinido)

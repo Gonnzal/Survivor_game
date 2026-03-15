@@ -25,7 +25,7 @@ public class playerController : MonoBehaviour
     public PlayerState[] state;
     public PlayerState currentState;
 
-    [SerializeField] float health;
+    [SerializeField] public float health;
     float coolDown1;
     float coolDown2;
     float coolDown3;

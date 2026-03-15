@@ -6,7 +6,7 @@ public class Tower : MonoBehaviour
     public static Tower instance;
 
     [SerializeField] private float maxHealth;
-    private float health;
+    public float health;
     Rounds rondas;
 
     private void Awake()
