@@ -33,7 +33,7 @@ public class EnemyAI : MonoBehaviour
         Moverse();
     }
 
-    void Moverse()
+    protected virtual void Moverse()
     {
         Vector2 diferencia = (Vector2)objetivoReal.position - rb2D.position;
         float distancia = diferencia.magnitude;

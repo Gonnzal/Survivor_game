@@ -42,6 +42,12 @@ public class Punch : MonoBehaviour
 
         if (rb2D == null) { rb2D = GetComponent<Rigidbody2D>(); }
         Vector2 direccion = (destino - origen).normalized;
+
+        if (direccion.x < 0f)
+            transform.localScale = new Vector2(-1, 1);
+        else
+            transform.localScale = new Vector2(1, 1);
+
         rb2D.linearVelocity = direccion * speed;
     }
 

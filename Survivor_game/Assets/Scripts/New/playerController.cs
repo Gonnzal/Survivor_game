@@ -62,6 +62,7 @@ public class playerController : MonoBehaviour
     float soundCooldown;
 
     public Animator animator;
+    private Vector2 lastMovement;
 
     private void Awake()
     {
@@ -91,28 +92,33 @@ public class playerController : MonoBehaviour
     private void FixedUpdate()
     {
         Vector3 targertPosition = Vector3.zero;
+        bool isMoving = false;
+
         if (Input.GetKey(KeyCode.W))
         {
-            animator.SetTrigger("P_Walk");
-            targertPosition += transform.up * speed * Time.deltaTime;
+            targertPosition += transform.up * speed * Time.fixedDeltaTime;
+            isMoving = true;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            animator.SetTrigger("P_Walk");
-            targertPosition += -transform.up * speed * Time.deltaTime;
+            targertPosition += -transform.up * speed * Time.fixedDeltaTime;
+            isMoving = true;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            animator.SetTrigger("P_Walk");
-            targertPosition += -transform.right * speed * Time.deltaTime;
+            targertPosition += -transform.right * speed * Time.fixedDeltaTime;
             transform.localScale = new Vector3(-1, 1, 1);
+            isMoving = true;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            animator.SetTrigger("P_Walk");
-            targertPosition += transform.right * speed * Time.deltaTime;
+            targertPosition += transform.right * speed * Time.fixedDeltaTime;
             transform.localScale = new Vector3(1, 1, 1);
+            isMoving = true;
         }
+
+        animator.SetBool("P_Walk", isMoving);
+
         rb.MovePosition(transform.position + targertPosition);
     }
 
@@ -279,12 +285,12 @@ public class playerController : MonoBehaviour
 
         if (coolDown3 <= 0)
         {
-            animator.SetTrigger("P-Punch");
             scream.GetComponent<Scream>().DispararScream(this.transform.position);
             coolDown3 = currentState.coolDownMax3;
+            animator.SetTrigger("P-Punch");
         }
         else
-        {    
+        {
             coolDown3 -= Time.deltaTime;
         }
     }
