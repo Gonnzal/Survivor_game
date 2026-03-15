@@ -54,7 +54,7 @@ public class Rounds : MonoBehaviour
             }
             timeCounter.text = minuteCount.ToString() + ":" + second1Count.ToString() + second2Count.ToString();
         }
-        if(minuteCount == roundDuration)
+        if(minuteCount == roundDuration && currentRound != roundCount)
         {
             FinishRound();
         }
@@ -110,11 +110,14 @@ public class Rounds : MonoBehaviour
     {
         gameCanvas.enabled = false;
         death.enabled = true;
+        Time.timeScale = 0;
     }
     public void FinishCanvas()
     {
         gameCanvas.enabled = false;
         win.enabled = true;
+        wave.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void Exit()

@@ -9,6 +9,7 @@ public class BoosAI : EnemyAI
     private float shootCooldown = 3f;
     private float shootTimer = 0f;
     float distanceX;
+    Rounds rondas;
 
     public AudioClip[] atack;
     public AudioClip[] move;
@@ -30,6 +31,7 @@ public class BoosAI : EnemyAI
 
         rb2D.mass = 1f;
         AddBalaToPool(balasSize);
+        rondas = GameObject.Find("canvasManager").GetComponent<Rounds>();
     }
 
     protected override void Update()
@@ -96,6 +98,7 @@ public class BoosAI : EnemyAI
 
     protected override void Muerte()
     {
+        rondas.FinishCanvas();
         base.Muerte();
         SoundManager.instance.PlaySFX(move[Random.Range(0, move.Length - 1)]);
     }
