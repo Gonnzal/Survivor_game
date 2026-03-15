@@ -10,6 +10,12 @@ public class BoosAI : EnemyAI
     private float shootTimer = 0f;
     float distanceX;
 
+    public AudioClip[] atack;
+    public AudioClip[] move;
+    public AudioClip[] muerte;
+
+    float soundCooldown;
+
     protected override void Start()
     {
         vidaMax = 100;
@@ -30,6 +36,7 @@ public class BoosAI : EnemyAI
     {
         base.Update();
         EnemigoDisapara();
+        EmitirSonido();
         distanceX = transform.position.x - targets[0].transform.position.x;
         if(distanceX > 0)
         {
@@ -48,6 +55,7 @@ public class BoosAI : EnemyAI
         Vector2 diferencia = (Vector2)objetivoReal.position - rb2D.position;
         if (shootTimer <= 0f && diferencia.magnitude <= distanciaJugador)
         {
+            SoundManager.instance.PlaySFX(atack[Random.Range(0, atack.Length - 1)]);
             objetivoReal = targets[targets.Count - 1];
             animator.SetTrigger("Shoot");
             GameObject dispBala = ActivarBala();
@@ -84,5 +92,22 @@ public class BoosAI : EnemyAI
         AddBalaToPool(1);
         poolBalas[poolBalas.Count - 1].SetActive(true);
         return poolBalas[poolBalas.Count - 1];
+    }
+
+    protected override void Muerte()
+    {
+        base.Muerte();
+        SoundManager.instance.PlaySFX(move[Random.Range(0, move.Length - 1)]);
+    }
+
+    void EmitirSonido()
+    {
+        soundCooldown += Time.deltaTime;
+
+        if (soundCooldown > 1)
+        {
+            SoundManager.instance.PlaySFX(move[Random.Range(0, move.Length - 1)]);
+            soundCooldown = 0;
+        }
     }
 }

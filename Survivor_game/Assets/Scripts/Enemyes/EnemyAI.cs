@@ -66,7 +66,7 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    void Muerte()
+    protected virtual void Muerte()
     {
         if (vida <= 0)
         {

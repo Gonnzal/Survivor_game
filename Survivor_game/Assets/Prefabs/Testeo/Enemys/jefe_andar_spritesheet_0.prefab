@@ -196,3 +196,12 @@ MonoBehaviour:
   distanciaJugador: 0
   poolBalas: []
   balaPrefab: {fileID: 6445541499820595964, guid: 75cd40377dd91f54ba6157ec8f9f2a4e, type: 3}
+  atack:
+  - {fileID: 8300000, guid: 497aaf1a2f79d4847925a04af2e9bc66, type: 3}
+  - {fileID: 8300000, guid: 9677592dd3a1f2540beb7b48bbb6f321, type: 3}
+  move:
+  - {fileID: 8300000, guid: ad8420c460e8d5744aee99ed74f38480, type: 3}
+  - {fileID: 8300000, guid: 4d8b25e57700f2a478168e46523f1590, type: 3}
+  muerte:
+  - {fileID: 8300000, guid: a1ad1a27ea61c9048a716cd1b9964ae8, type: 3}
+  - {fileID: 8300000, guid: b51a828e7329b214a91b61d9866ba68d, type: 3}
