@@ -9,6 +9,9 @@ public class Axe : MonoBehaviour
 
     public AudioClip[] axe;
 
+    public AudioClip[] danioAmele;
+    public AudioClip[] danioBoss;
+
     void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -47,17 +50,16 @@ public class Axe : MonoBehaviour
     {
         if (other.gameObject.TryGetComponent<AmeleAI>(out AmeleAI enemy))
         {
-            SoundManager.instance.PlaySFX(axe[Random.Range(0, axe.Length - 1)]);
+            SoundManager.instance.PlaySFX(danioAmele[Random.Range(0, danioAmele.Length - 1)]);
             enemy.ReciveDanio(damage);
         }
-        else if(other.gameObject.TryGetComponent<DistanceAI>(out DistanceAI enemy2))
+        else if (other.gameObject.TryGetComponent<DistanceAI>(out DistanceAI enemy2))
         {
-            SoundManager.instance.PlaySFX(axe[Random.Range(0, axe.Length - 1)]);
             enemy2.ReciveDanio(damage);
         }
-        else if(other.gameObject.TryGetComponent<BoosAI>(out BoosAI enemy3))
+        else if (other.gameObject.TryGetComponent<BoosAI>(out BoosAI enemy3))
         {
-            SoundManager.instance.PlaySFX(axe[Random.Range(0, axe.Length - 1)]);
+            SoundManager.instance.PlaySFX(danioBoss[Random.Range(0, danioBoss.Length - 1)]);
             enemy3.ReciveDanio(damage);
         }
     }

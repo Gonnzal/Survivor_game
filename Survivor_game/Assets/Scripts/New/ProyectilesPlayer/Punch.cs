@@ -9,6 +9,9 @@ public class Punch : MonoBehaviour
 
     public AudioClip[] punch;
 
+    public AudioClip[] danioAmele;
+    public AudioClip[] danioBoss;
+
     void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -46,14 +49,16 @@ public class Punch : MonoBehaviour
     {
         if (other.gameObject.TryGetComponent<AmeleAI>(out AmeleAI enemy))
         {
+            SoundManager.instance.PlaySFX(danioAmele[Random.Range(0, danioAmele.Length - 1)]);
             enemy.ReciveDanio(damage);
         }
-        else if(other.gameObject.TryGetComponent<DistanceAI>(out DistanceAI enemy2))
+        else if (other.gameObject.TryGetComponent<DistanceAI>(out DistanceAI enemy2))
         {
             enemy2.ReciveDanio(damage);
         }
-        else if(other.gameObject.TryGetComponent<BoosAI>(out BoosAI enemy3))
+        else if (other.gameObject.TryGetComponent<BoosAI>(out BoosAI enemy3))
         {
+            SoundManager.instance.PlaySFX(danioBoss[Random.Range(0, danioBoss.Length - 1)]);
             enemy3.ReciveDanio(damage);
         }
     }
