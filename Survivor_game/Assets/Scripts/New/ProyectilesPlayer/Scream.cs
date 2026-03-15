@@ -5,8 +5,8 @@ public class Scream : MonoBehaviour
     private Rigidbody2D rb2D;
     private Animator animator;
     public int damage;
-    //private float lifeTime = 3f;
-    //private float speed = 5f;
+
+    public AudioClip[] grito;
 
     void Awake()
     {
@@ -15,27 +15,11 @@ public class Scream : MonoBehaviour
     }
 
 
-    // Puede que no sean necesarios
-    //void Update()
-    //{
-    //    LifeTime();
-    //}
-
-    //void LifeTime()
-    //{
-    //    lifeTime -= Time.deltaTime;
-    //    if (lifeTime <= 0f)
-    //    {
-    //        rb2D.linearVelocity = Vector2.zero;
-    //        gameObject.SetActive(false);
-    //    }
-    //}
-
     public void DispararScream(Vector2 origen)
     {
+        SoundManager.instance.PlaySFX(grito[Random.Range(0, grito.Length - 1)]);
         this.transform.position = origen;
         gameObject.SetActive(true);
-        // animator.SetTrigger("Scream");
     }
 
     void AnimEnd()
