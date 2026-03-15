@@ -7,8 +7,12 @@ public class AmeleAI : EnemyAI
 
     public AudioClip[] atack;
     public AudioClip[] move;
+    bool atras;
+    float maxSpeed;
 
     float soundCooldown;
+    float count;
+    Tower torre;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected override void Start()
@@ -19,12 +23,23 @@ public class AmeleAI : EnemyAI
         distanciaJugador = 1f;
         base.Start();
         rb2D.mass = 0.01f;
+        atras = false;
+        maxSpeed = velocidad;
     }
 
     protected override void Update()
     {
         base.Update();
         EmitirSonido();
+        if(atras)
+        {
+            count += Time.deltaTime;
+        }
+        if(count >= 2)
+        {
+            torre.ReceiveDamage(danio);
+            count = 0;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -34,6 +49,12 @@ public class AmeleAI : EnemyAI
         if (collision.gameObject.TryGetComponent<playerController>(out playerController obj))
         {
             obj.ReceiveDamage(danio);
+        }
+        if (collision.gameObject.TryGetComponent<Tower>(out Tower obj2))
+        {
+            obj2.ReceiveDamage(danio);
+            torre = obj2;
+            atras = true;
         }
     }
 
