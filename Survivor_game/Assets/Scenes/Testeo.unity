@@ -490,6 +490,7 @@ MonoBehaviour:
   targets: []
   objetivoReal: {fileID: 0}
   vida: 0
+  velocidad: 0
   distanciaJugador: 0
   poolBalas: []
   balaPrefab: {fileID: 6445541499820595964, guid: 75cd40377dd91f54ba6157ec8f9f2a4e, type: 3}
@@ -2145,6 +2146,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1458369687700898945, guid: e0e9d86637f38ee46b6982b0ea2aa4db, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458369687700898945, guid: e0e9d86637f38ee46b6982b0ea2aa4db, type: 3}
       propertyPath: m_LocalPosition.x
       value: -55
       objectReference: {fileID: 0}
@@ -2207,6 +2212,18 @@ PrefabInstance:
     - target: {fileID: 3762619874803523804, guid: e0e9d86637f38ee46b6982b0ea2aa4db, type: 3}
       propertyPath: m_CollisionDetection
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8766293011335989568, guid: e0e9d86637f38ee46b6982b0ea2aa4db, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3699609111625054685, guid: 7e531b6a0cb78f844ae3a6119d2dd421, type: 3}
+    - target: {fileID: 9107907230909595163, guid: e0e9d86637f38ee46b6982b0ea2aa4db, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107907230909595163, guid: e0e9d86637f38ee46b6982b0ea2aa4db, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.28
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
