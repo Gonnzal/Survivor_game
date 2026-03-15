@@ -44,15 +44,18 @@ public class AmeleAI : EnemyAI
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        animator.SetTrigger("Bite");
         SoundManager.instance.PlaySFX(atack[Random.Range(0, atack.Length - 1)]);
         if (collision.gameObject.TryGetComponent<playerController>(out playerController obj))
         {
+            animator.SetTrigger("Bite");
             obj.ReceiveDamage(danio);
+            Debug.Log(danio);
         }
         if (collision.gameObject.TryGetComponent<Tower>(out Tower obj2))
         {
+            animator.SetTrigger("Bite");
             obj2.ReceiveDamage(danio);
+            Debug.Log(danio);
             torre = obj2;
             atras = true;
         }

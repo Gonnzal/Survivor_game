@@ -21,7 +21,7 @@ public class EnemyAI : MonoBehaviour
         targets.Add(Tower.instance.transform);
         targets.Add(playerController.instance.transform);
         objective = Random.Range(0, targets.Count);
-        danio = 1;
+        
         vida = vidaMax;
         if (animator == null) { animator = GetComponent<Animator>(); }
         if (rb2D == null) { rb2D = GetComponent<Rigidbody2D>(); }
