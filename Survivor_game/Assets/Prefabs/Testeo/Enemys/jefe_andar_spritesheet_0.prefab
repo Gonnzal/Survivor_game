@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8411192215965881614}
   - component: {fileID: 7464265519875491949}
   - component: {fileID: 4975438026397840908}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: jefe_andar_spritesheet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -106,8 +106,20 @@ MonoBehaviour:
   targets: []
   objetivoReal: {fileID: 0}
   vida: 30
+  velocidad: 0
   distanciaJugador: 0.5
   cooldownMax: 5
+  atack:
+  - {fileID: 8300000, guid: 6174d30f61d13d64c8e8db2e9060131a, type: 3}
+  - {fileID: 8300000, guid: 8b877f77d951556468b135896e39462d, type: 3}
+  - {fileID: 8300000, guid: b46587b3cfff0bb4c8ed3604f42e59cc, type: 3}
+  move:
+  - {fileID: 8300000, guid: 9ae020a6e8017594b8e6fe147825ef4f, type: 3}
+  - {fileID: 8300000, guid: a3fe5175d7ac3d641b00ef109ae27b2c, type: 3}
+  - {fileID: 8300000, guid: 650f59855edb32a43a01c7f3fc7be19f, type: 3}
+  - {fileID: 8300000, guid: 902b077d860422c45b6ce031bc143207, type: 3}
+  - {fileID: 8300000, guid: 370b172b18654b249ad6a019fc176719, type: 3}
+  - {fileID: 8300000, guid: 0a222bbfc4be3d340958de619ee526fd, type: 3}
 --- !u!50 &-876395816423384082
 Rigidbody2D:
   serializedVersion: 5
