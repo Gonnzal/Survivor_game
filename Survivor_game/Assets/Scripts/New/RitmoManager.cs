@@ -22,7 +22,7 @@ public class RitmoManager : MonoBehaviour
     {
         float tiempoActual = audioSource.time; // Tiempo real del audio
 
-        // Comprobar si algún evento debe activarse
+        // Comprobar si algï¿½n evento debe activarse
         foreach (var evento in eventos)
         {
             if (!evento.yaActivado && tiempoActual >= evento.tiempoEnCancion)
@@ -32,7 +32,7 @@ public class RitmoManager : MonoBehaviour
                 evento.yaActivado = true;
             }
         }
-
+        /*
         if (eventoActivo != null)
         {
             tiempoVentana += Time.deltaTime;
@@ -49,5 +49,6 @@ public class RitmoManager : MonoBehaviour
                 eventoActivo = null;
             }
         }
+        */
     }
 }

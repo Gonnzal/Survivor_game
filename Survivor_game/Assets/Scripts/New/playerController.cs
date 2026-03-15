@@ -11,7 +11,10 @@ public struct PlayerState
     public float maxDashTime;
     public float defaultSpeed;
     public float dashSpeed;
-    public int danioMax;
+    public int danioAxe;
+    public int danioPunch;
+    public int danioScream;
+
 }
 public class playerController : MonoBehaviour
 {
@@ -81,12 +84,12 @@ public class playerController : MonoBehaviour
         dashTime = 0;
         speed = currentState.defaultSpeed;
         health = maxHealth;
-        danio = currentState.danioMax;
         AddPunchToPool(punchSize);
         AddAxeToPool(axeSize);
-        scream.GetComponent<Scream>().damage = currentState.danioMax;
+        scream.GetComponent<Scream>().damage = currentState.danioScream;
         rondas = GameObject.Find("canvasManager").GetComponent<Rounds>();
         animator = animator.GetComponent<Animator>();
+        ReceiveDamage(0);
     }
 
     private void FixedUpdate()
@@ -157,17 +160,17 @@ public class playerController : MonoBehaviour
             for(int i = 0; i<= poolAxe.Count; i++)
             {
                 poolAxe[i].SetActive(true);
-                poolAxe[i].GetComponent<Axe>().damage = currentState.danioMax + axeUpgrade;
+                poolAxe[i].GetComponent<Axe>().damage = currentState.danioAxe + axeUpgrade;
                 poolAxe[i].SetActive(false);
             }
             for(int i = 0; i<= poolPunch.Count; i++)
             {
                 poolPunch[i].SetActive(true);
-                poolPunch[i].GetComponent<Punch>().damage = currentState.danioMax + punchUpgrade;
+                poolPunch[i].GetComponent<Punch>().damage = currentState.danioPunch + punchUpgrade;
                 poolPunch[i].SetActive(false);
             }
             scream.SetActive(true);
-            scream.GetComponent<Scream>().damage = currentState.danioMax + screamUpgrade;
+            scream.GetComponent<Scream>().damage = currentState.danioScream + screamUpgrade;
             scream.SetActive(false);
         }
         else if (health <= maxHealth * 0.33f && health > maxHealth * -10f)
@@ -176,17 +179,17 @@ public class playerController : MonoBehaviour
             for(int i = 0; i<= poolAxe.Count; i++)
             {
                 poolAxe[i].SetActive(true);
-                poolAxe[i].GetComponent<Axe>().damage = currentState.danioMax + axeUpgrade;
+                poolAxe[i].GetComponent<Axe>().damage = currentState.danioAxe + axeUpgrade;
                 poolAxe[i].SetActive(false);
             }
             for(int i = 0; i<= poolPunch.Count; i++)
             {
                 poolPunch[i].SetActive(true);
-                poolPunch[i].GetComponent<Punch>().damage = currentState.danioMax + punchUpgrade;
+                poolPunch[i].GetComponent<Punch>().damage = currentState.danioPunch + punchUpgrade;
                 poolPunch[i].SetActive(false);
             }
             scream.SetActive(true);
-            scream.GetComponent<Scream>().damage = currentState.danioMax + screamUpgrade;
+            scream.GetComponent<Scream>().damage = currentState.danioScream + screamUpgrade;
             scream.SetActive(false);
         }
         else
@@ -194,17 +197,17 @@ public class playerController : MonoBehaviour
             for(int i = 0; i < poolAxe.Count; i++)
             {
                 poolAxe[i].SetActive(true);
-                poolAxe[i].GetComponent<Axe>().damage = currentState.danioMax + axeUpgrade;
+                poolAxe[i].GetComponent<Axe>().damage = currentState.danioAxe + axeUpgrade;
                 poolAxe[i].SetActive(false);
             }
             for(int i = 0; i < poolPunch.Count; i++)
             {
                 poolPunch[i].SetActive(true);
-                poolPunch[i].GetComponent<Punch>().damage = currentState.danioMax + punchUpgrade;
+                poolPunch[i].GetComponent<Punch>().damage = currentState.danioPunch + punchUpgrade;
                 poolPunch[i].SetActive(false);
             }
             scream.SetActive(true);
-            scream.GetComponent<Scream>().damage = currentState.danioMax + screamUpgrade;
+            scream.GetComponent<Scream>().damage = currentState.danioScream + screamUpgrade;
             scream.SetActive(false);
         }
     }
@@ -295,7 +298,7 @@ public class playerController : MonoBehaviour
         for (int i = 0; i < amount; i++)
         {
             GameObject punchP = Instantiate(punch);
-            punchP.GetComponent<Punch>().damage = currentState.danioMax;
+            punchP.GetComponent<Punch>().damage = currentState.danioPunch;
             punchP.gameObject.SetActive(false);
             poolPunch.Add(punchP); 
         }
@@ -306,7 +309,7 @@ public class playerController : MonoBehaviour
         for (int i = 0; i < amount; i++)
         {
             GameObject axeP = Instantiate(axe);
-            axeP.GetComponent<Axe>().damage = currentState.danioMax;
+            axeP.GetComponent<Axe>().damage = currentState.danioAxe;
             axeP.gameObject.SetActive(false);
             poolAxe.Add(axeP);
         }

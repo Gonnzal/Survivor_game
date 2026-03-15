@@ -38,12 +38,6 @@ public class Rounds : MonoBehaviour
     Tower vidaMuro;
     [SerializeField] TMP_Text vidaplayer;
     [SerializeField] TMP_Text vidamuro;
-    bool bossDead;
-
-    void Awake()
-    {
-        DontDestroyOnLoad(this);
-    }
 
     void Start()
     {
@@ -60,7 +54,6 @@ public class Rounds : MonoBehaviour
         win.enabled = false;
         death.enabled = false;
         mecanicas.enabled = false;
-        bossDead = true;
     }
 
     void Update()
@@ -171,7 +164,6 @@ public class Rounds : MonoBehaviour
     {
         SoundManager.instance.StopMusic();
         SoundManager.instance.StopHambient();
-        bossDead = false;
         Time.timeScale = 0;
         gameCanvas.enabled = false;
         death.enabled = true;
