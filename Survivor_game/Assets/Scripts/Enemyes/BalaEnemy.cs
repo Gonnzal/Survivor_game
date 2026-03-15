@@ -5,9 +5,9 @@ using UnityEngine.UIElements;
 public class BalaEnemy : MonoBehaviour
 {
     private Rigidbody2D rb2D;
-    private float lifeTime = 3f;
-    private float speed = 5f;
-    [SerializeField] int damage;
+    public float lifeTime = 5f;
+    public float speed = 20f;
+    public int damage = 10;
 
     void Awake()
     {

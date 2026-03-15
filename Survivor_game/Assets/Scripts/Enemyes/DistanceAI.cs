@@ -17,10 +17,9 @@ public class DistanceAI : EnemyAI
 
     protected override void Start()
     {
-        vidaMax = 10;
-        velocidad = 5;
-        danio = 5;
-        distanciaJugador = 5f;
+        vidaMax = 15;
+        velocidad = 8;
+        distanciaJugador = 15f;
         base.Start();
         rb2D.mass = 1f;
         AddBalaToPool(balasSize);

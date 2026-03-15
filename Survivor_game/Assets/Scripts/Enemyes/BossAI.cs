@@ -20,7 +20,7 @@ public class BoosAI : EnemyAI
     protected override void Start()
     {
         vidaMax = 100;
-        velocidad = 5;
+        velocidad = 9;
         danio = 5;
         distanciaJugador = 20f;
 

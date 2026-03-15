@@ -3,8 +3,8 @@ using UnityEngine;
 public class Punch : MonoBehaviour
 {
     private Rigidbody2D rb2D;
-    private float lifeTime = 3f;
-    private float speed = 5f;
+    private float lifeTime = 0.5f;
+    private float speed = 30f;
     public int damage;
 
     public AudioClip[] punch;
@@ -29,6 +29,7 @@ public class Punch : MonoBehaviour
         {
             rb2D.linearVelocity = Vector2.zero;
             gameObject.SetActive(false);
+            lifeTime = 0.5f;
         }
     }
 
@@ -38,7 +39,6 @@ public class Punch : MonoBehaviour
         SoundManager.instance.PlaySFX(punch[Random.Range(0, punch.Length - 1)]);
 
         transform.position = origen;
-        lifeTime = 3f;
 
         if (rb2D == null) { rb2D = GetComponent<Rigidbody2D>(); }
         Vector2 direccion = (destino - origen).normalized;

@@ -17,8 +17,8 @@ public class AmeleAI : EnemyAI
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected override void Start()
     {
-        vidaMax = 10;
-        velocidad = 5;
+        vidaMax = 30;
+        velocidad = 15;
         danio = 5;
         distanciaJugador = 1f;
         base.Start();
@@ -35,7 +35,7 @@ public class AmeleAI : EnemyAI
         {
             count += Time.deltaTime;
         }
-        if(count >= 2)
+        if(count >= 1)
         {
             torre.ReceiveDamage(danio);
             count = 0;
@@ -48,12 +48,10 @@ public class AmeleAI : EnemyAI
         if (collision.gameObject.TryGetComponent<playerController>(out playerController obj))
         {
             obj.ReceiveDamage(danio);
-            Debug.Log(danio);
         }
         if (collision.gameObject.TryGetComponent<Tower>(out Tower obj2))
         {
             obj2.ReceiveDamage(danio);
-            Debug.Log(danio);
             torre = obj2;
             atras = true;
         }
