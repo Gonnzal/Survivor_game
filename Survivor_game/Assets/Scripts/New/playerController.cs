@@ -61,6 +61,8 @@ public class playerController : MonoBehaviour
 
     float soundCooldown;
 
+    public Animator animator;
+
     private void Awake()
     {
         instance = this;
@@ -83,6 +85,7 @@ public class playerController : MonoBehaviour
         AddAxeToPool(axeSize);
         scream.GetComponent<Scream>().damage = currentState.danioMax;
         rondas = GameObject.Find("canvasManager").GetComponent<Rounds>();
+        animator = this.GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -90,19 +93,23 @@ public class playerController : MonoBehaviour
         Vector3 targertPosition = Vector3.zero;
         if (Input.GetKey(KeyCode.W))
         {
+            animator.SetTrigger("P_Walk");
             targertPosition += transform.up * speed * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.S))
         {
+            animator.SetTrigger("P_Walk");
             targertPosition += -transform.up * speed * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.A))
         {
+            animator.SetTrigger("P_Walk");
             targertPosition += -transform.right * speed * Time.deltaTime;
             transform.localScale = new Vector3(-1, 1, 1);
         }
         if (Input.GetKey(KeyCode.D))
         {
+            animator.SetTrigger("P_Walk");
             targertPosition += transform.right * speed * Time.deltaTime;
             transform.localScale = new Vector3(1, 1, 1);
         }
@@ -272,6 +279,7 @@ public class playerController : MonoBehaviour
 
         if (coolDown3 <= 0)
         {
+            animator.SetTrigger("P-Punch");
             scream.GetComponent<Scream>().DispararScream(this.transform.position);
             coolDown3 = currentState.coolDownMax3;
         }
