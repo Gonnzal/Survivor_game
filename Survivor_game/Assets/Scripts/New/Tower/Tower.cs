@@ -37,8 +37,6 @@ public class Tower : MonoBehaviour
 
     public virtual void ReceiveDamage(int damage)
     {
-        // Debug.Log(health);
         health -= damage;
-        // Debug.Log(health);
     }
 }
