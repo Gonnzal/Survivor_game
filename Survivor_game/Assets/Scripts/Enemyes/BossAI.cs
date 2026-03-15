@@ -50,6 +50,22 @@ public class BoosAI : EnemyAI
         }
     }
 
+    protected override void Moverse()
+    {
+        Vector2 diferencia = (Vector2)objetivoReal.position - rb2D.position;
+    
+        rb2D.linearVelocity = diferencia.normalized * velocidad;
+            
+        if (rb2D.linearVelocityX < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+        if (rb2D.linearVelocityX > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+    }
+
     void EnemigoDisapara()
     {
         shootTimer -= Time.deltaTime;

@@ -287,7 +287,7 @@ public class playerController : MonoBehaviour
         {
             scream.GetComponent<Scream>().DispararScream(this.transform.position);
             coolDown3 = currentState.coolDownMax3;
-            animator.SetTrigger("P_Punch");
+            animator.SetTrigger("P-Punch");
         }
         else
         {
