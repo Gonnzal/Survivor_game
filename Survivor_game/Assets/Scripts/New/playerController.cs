@@ -85,7 +85,7 @@ public class playerController : MonoBehaviour
         AddAxeToPool(axeSize);
         scream.GetComponent<Scream>().damage = currentState.danioMax;
         rondas = GameObject.Find("canvasManager").GetComponent<Rounds>();
-        animator = this.GetComponent<Animator>();
+        animator = animator.GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -162,7 +162,7 @@ public class playerController : MonoBehaviour
             for(int i = 0; i<= poolPunch.Count; i++)
             {
                 poolPunch[i].SetActive(true);
-                poolPunch[i].GetComponent<Punch>().damage = currentState.danioMax + axeUpgrade;
+                poolPunch[i].GetComponent<Punch>().damage = currentState.danioMax + punchUpgrade;
                 poolPunch[i].SetActive(false);
             }
             scream.SetActive(true);
@@ -181,7 +181,7 @@ public class playerController : MonoBehaviour
             for(int i = 0; i<= poolPunch.Count; i++)
             {
                 poolPunch[i].SetActive(true);
-                poolPunch[i].GetComponent<Punch>().damage = currentState.danioMax + axeUpgrade;
+                poolPunch[i].GetComponent<Punch>().damage = currentState.danioMax + punchUpgrade;
                 poolPunch[i].SetActive(false);
             }
             scream.SetActive(true);
@@ -199,7 +199,7 @@ public class playerController : MonoBehaviour
             for(int i = 0; i < poolPunch.Count; i++)
             {
                 poolPunch[i].SetActive(true);
-                poolPunch[i].GetComponent<Punch>().damage = currentState.danioMax + axeUpgrade;
+                poolPunch[i].GetComponent<Punch>().damage = currentState.danioMax + punchUpgrade;
                 poolPunch[i].SetActive(false);
             }
             scream.SetActive(true);
@@ -297,7 +297,6 @@ public class playerController : MonoBehaviour
             punchP.GetComponent<Punch>().damage = currentState.danioMax;
             punchP.gameObject.SetActive(false);
             poolPunch.Add(punchP); 
-            punchP.transform.parent = this.transform;
         }
     }
 
@@ -309,7 +308,6 @@ public class playerController : MonoBehaviour
             axeP.GetComponent<Axe>().damage = currentState.danioMax;
             axeP.gameObject.SetActive(false);
             poolAxe.Add(axeP);
-            axeP.transform.parent = this.transform;
         }
     }
 
@@ -362,7 +360,6 @@ public class playerController : MonoBehaviour
 
         if(dashing)
         {
-            Debug.Log("Dash");
             dashTime += Time.deltaTime;
             if(dashTime >= currentState.maxDashTime)
             {
