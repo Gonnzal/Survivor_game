@@ -33,6 +33,10 @@ public class Rounds : MonoBehaviour
     public AudioClip round5Loop;
 
     public AudioClip hambiente;
+    playerController vidaPlayer;
+    Tower vidaMuro;
+    [SerializeField] TMP_Text vidaplayer;
+    [SerializeField] TMP_Text vidamuro;
 
     void Awake()
     {
@@ -44,6 +48,8 @@ public class Rounds : MonoBehaviour
         SoundManager.instance.PlayMusic(menusMusic);
         currentRound = 0;
         MainMenu();
+        vidaPlayer = GameObject.Find("").GetComponent<playerController>();
+        vidaMuro = GameObject.Find("").GetComponent<Tower>();
     }
 
     void Update()
