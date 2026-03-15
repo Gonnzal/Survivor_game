@@ -15,6 +15,7 @@ public struct PlayerState
 }
 public class playerController : MonoBehaviour
 {
+    Rounds rondas;
     public static playerController instance;
 
     public Rigidbody2D rb; 
@@ -81,6 +82,7 @@ public class playerController : MonoBehaviour
         AddPunchToPool(punchSize);
         AddAxeToPool(axeSize);
         scream.GetComponent<Scream>().damage = currentState.danioMax;
+        rondas = GameObject.Find("canvasManager").GetComponent<Rounds>();
     }
 
     private void FixedUpdate()
@@ -126,11 +128,20 @@ public class playerController : MonoBehaviour
             Dash();
         }
 
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            ReceiveDamage(100);
+        }
+
     }
 
     public void ReceiveDamage(int damage)
     {
         health -= damage;
+        if(health <= 0)
+        {
+            rondas.DeathCanvas();
+        }
 
         if (health <= maxHealth * 0.66f && health > maxHealth * 0.33f)
         {

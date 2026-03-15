@@ -77,7 +77,6 @@ public class Rounds : MonoBehaviour
 
     public void MainMenu()
     {
-        Time.timeScale = 0;
         mainMenu.enabled = true;
         gameCanvas.enabled = false;
         canvasBetweenRounds.enabled = false;
@@ -87,6 +86,7 @@ public class Rounds : MonoBehaviour
         minuteCount = 0;
         second2Count = 0;
         second1Count = 0;
+        Time.timeScale = 0;
     }
 
     public void Credits()
@@ -98,6 +98,7 @@ public class Rounds : MonoBehaviour
     public void StartRound()
     {
         Time.timeScale = 1;
+        timeCounter.text = minuteCount.ToString() + ":" + second1Count.ToString() + second2Count.ToString();
         canvasGroup.alpha = 1;
         canvasGroup.interactable = true;
         gameCanvas.enabled = true;
