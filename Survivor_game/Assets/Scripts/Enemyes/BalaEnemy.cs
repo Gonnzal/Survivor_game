@@ -16,7 +16,7 @@ public class BalaEnemy : MonoBehaviour
 
     void Start()
     {
-       StartCoroutine(FlipBala());
+       
     }
 
     void Update()
@@ -61,27 +61,11 @@ public class BalaEnemy : MonoBehaviour
     {
         if(other.gameObject.TryGetComponent<playerController>(out playerController obj))
         {
-            obj.TakeDamage(damage);
+            obj.ReceiveDamage(damage);
         }
         if(other.gameObject.TryGetComponent<Tower>(out Tower obj2))
         {
             obj2.ReceiveDamage(damage);
-        }
-    }
-
-    IEnumerator FlipBala()
-    {
-        for (int i = 0; i < 2; i++)
-        {
-            yield return null;
-        }
-        if(rb2D.linearVelocityX < 0)
-        {
-            transform.localScale = new Vector3(-1, 1, 1);
-        }
-        if(rb2D.linearVelocityX > 0)
-        {
-            transform.localScale = new Vector3(1, 1, 1);
         }
     }
 }

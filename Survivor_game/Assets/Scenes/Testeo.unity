@@ -581,6 +581,70 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1059507124}
+    - target: {fileID: 2190807221151062664, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
+      propertyPath: state.Array.data[1].danioMax
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190807221151062664, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
+      propertyPath: state.Array.data[2].danioMax
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190807221151062664, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
+      propertyPath: state.Array.data[1].dashSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190807221151062664, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
+      propertyPath: state.Array.data[2].dashSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190807221151062664, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
+      propertyPath: state.Array.data[1].maxDashTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190807221151062664, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
+      propertyPath: state.Array.data[2].maxDashTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190807221151062664, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
+      propertyPath: state.Array.data[1].coolDownMax1
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190807221151062664, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
+      propertyPath: state.Array.data[1].coolDownMax2
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190807221151062664, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
+      propertyPath: state.Array.data[1].coolDownMax3
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190807221151062664, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
+      propertyPath: state.Array.data[1].defaultSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190807221151062664, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
+      propertyPath: state.Array.data[2].coolDownMax1
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190807221151062664, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
+      propertyPath: state.Array.data[2].coolDownMax2
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190807221151062664, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
+      propertyPath: state.Array.data[2].coolDownMax3
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190807221151062664, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
+      propertyPath: state.Array.data[2].defaultSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190807221151062664, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
+      propertyPath: state.Array.data[1].coolDownDashMax
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190807221151062664, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
+      propertyPath: state.Array.data[2].coolDownDashMax
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6041852569815453814, guid: 2118d7e56cbd8944881159962ec71b16, type: 3}
       propertyPath: m_Name
       value: Player

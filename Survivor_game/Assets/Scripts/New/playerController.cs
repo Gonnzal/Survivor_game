@@ -140,16 +140,11 @@ public class playerController : MonoBehaviour
         {
             Dash();
         }
-
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            ReceiveDamage(100);
-        }
-
     }
 
     public void ReceiveDamage(int damage)
     {
+        SoundManager.instance.PlaySFX(recibeDanio[Random.Range(0, recibeDanio.Length - 1)]);
         health -= damage;
         if(health <= 0)
         {
@@ -373,16 +368,6 @@ public class playerController : MonoBehaviour
                 speed = currentState.defaultSpeed;
                 dashTime = 0;
             }
-        }
-    }
-
-    public void TakeDamage(int damage)
-    {
-        SoundManager.instance.PlaySFX(recibeDanio[Random.Range(0, recibeDanio.Length - 1)]);
-        health -= damage;
-        if(health <= 0)
-        {
-            canvas.DeathCanvas();
         }
     }
 
