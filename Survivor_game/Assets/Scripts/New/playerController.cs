@@ -55,6 +55,11 @@ public class playerController : MonoBehaviour
     private float searchTimer = 0f;
     private float searchRate = 0.2f; // actualiza 5 veces por segundo
 
+    public AudioClip[] recibeDanio;
+    public AudioClip[] move;
+
+    float soundCooldown;
+
     private void Awake()
     {
         instance = this;
@@ -115,30 +120,7 @@ public class playerController : MonoBehaviour
         Ataque2();
         Ataque3();
         DashCheck();
-        //if(Input.GetKey(KeyCode.W))
-        //{
-        //    float targetY = transform.position.y + speed * Time.deltaTime;
-        //    if (targetY > 49)
-        //    {
-        //        targetY = 49;
-        //    }
-        //    transform.position = new Vector2(transform.position.x, targetY);
-        //}
-
-        //if(Input.GetKey(KeyCode.S))
-        //{
-        //    transform.position = new Vector2(transform.position.x, transform.position.y - speed * Time.deltaTime);
-        //}
-
-        //if(Input.GetKey(KeyCode.A))
-        //{
-        //    transform.position = new Vector2(transform.position.x - speed * Time.deltaTime, transform.position.y);
-        //}
-
-        //if(Input.GetKey(KeyCode.D))
-        //{
-        //    transform.position = new Vector2(transform.position.x + speed * Time.deltaTime, transform.position.y);
-        //}
+        
         if(Input.GetKeyDown(KeyCode.LeftShift))
         {
             Dash();
@@ -374,10 +356,22 @@ public class playerController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        SoundManager.instance.PlaySFX(recibeDanio[Random.Range(0, recibeDanio.Length - 1)]);
         health -= damage;
         if(health <= 0)
         {
             canvas.DeathCanvas();
+        }
+    }
+
+    void EmitirSonido()
+    {
+        soundCooldown += Time.deltaTime;
+
+        if (soundCooldown > 7)
+        {
+            SoundManager.instance.PlaySFX(move[Random.Range(0, move.Length - 1)]);
+            soundCooldown = 0;
         }
     }
 
